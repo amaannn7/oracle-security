@@ -93,14 +93,14 @@ export default function AboutPage() {
             </section>
 
             {/* Team Section */}
-            <section className="py-16 bg-[#e8eef4]">
+            <section className="py-12 bg-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
-                        <h2 className="text-4xl font-bold text-[#1e3a5f] mb-4">Our Team</h2>
-                        <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
+                    <div className="text-center mb-8">
+                        <h2 className="text-3xl font-bold text-[#1e3a5f] mb-4">Our Team</h2>
+                        <div className="w-20 h-1 bg-[#d4af37] mx-auto"></div>
                     </div>
-                    <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
+                    <div className="grid grid-cols-2 gap-6 max-w-3xl mx-auto">
+                        <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                             <Image
                                 src="/team-1.jpeg"
                                 alt="Oracle Services Team"
@@ -109,7 +109,7 @@ export default function AboutPage() {
                                 unoptimized
                             />
                         </div>
-                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
+                        <div className="relative h-[250px] rounded-xl overflow-hidden shadow-lg">
                             <Image
                                 src="/team-2.jpeg"
                                 alt="Oracle Services Team"
