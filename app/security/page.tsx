@@ -139,7 +139,7 @@ export default function SecurityPage() {
                             <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                                 Trusted by major corporations, hotels, banks, and government organizations across Sri Lanka.
                             </p>
-                            <div className="text-sm sm:text-base text-[#d4af37] font-semibold flex items-center group-hover:gap-3 gap-2 transition-all">
+                            <div className="text-sm sm:text-base text-[#d4af37] font-semibold flex items-center group-hover:gap-3 gap-2 transition-all group-hover:text-[#1e3a5f]">
                                 View Clients
                                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
