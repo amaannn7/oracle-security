@@ -62,81 +62,81 @@ export default function ClientsPage() {
             {/* Hero Section */}
             <section className="pt-32 pb-16 bg-gradient-to-br from-[#1e3a5f] via-[#3d5a80] to-[#5b7c99]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
                         <span className="inline-block animate-word-slide">Our</span>{" "}
                         <span className="inline-block animate-bounce-in animate-delay-200">Clients</span>
                     </h1>
-                    <div className="w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-300"></div>
+                    <div className="w-20 sm:w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-300"></div>
                 </div>
             </section>
 
             {/* Client Logos Marquee */}
-            <section className="py-16 bg-white relative overflow-hidden border-y-2 border-gray-100">
+            <section className="py-10 sm:py-16 bg-white relative overflow-hidden border-y-2 border-gray-100">
                 {/* Decorative Elements */}
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8">
-                    <h2 className="text-3xl font-bold text-center text-[#1e3a5f] mb-2">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
+                    <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#1e3a5f] mb-2">
                         Trusted by Leading Brands
                     </h2>
-                    <p className="text-center text-gray-600">Our prestigious client portfolio</p>
+                    <p className="text-center text-sm sm:text-base text-gray-600">Our prestigious client portfolio</p>
                 </div>
 
                 <div className="relative pointer-events-none">
                     <div className="marquee">
                         <div className="marquee-content pointer-events-none">
                             {/* First set of logos */}
-                            <div className="inline-flex items-center gap-16 px-8">
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                            <div className="inline-flex items-center gap-8 sm:gap-16 px-4 sm:px-8">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/fab.logo.jpg" alt="FAB" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/fashion-bug.logo.png" alt="Fashion Bug" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/hameedia.logo.png" alt="Hameedia" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/hayleys.logo.png" alt="Hayleys" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/Heritance_Kandalama_logo.png" alt="Heritance" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/Port-City-BPO-logo.webp" alt="Port City" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/aitken.logo.jpg" alt="Aitken Spence" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/amethyst.logo.jpg" alt="Amethyst" className="max-w-full max-h-full object-contain" />
                                 </div>
                             </div>
                             {/* Duplicate set for seamless loop */}
-                            <div className="inline-flex items-center gap-16 px-8">
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                            <div className="inline-flex items-center gap-8 sm:gap-16 px-4 sm:px-8">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/fab.logo.jpg" alt="FAB" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/fashion-bug.logo.png" alt="Fashion Bug" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/hameedia.logo.png" alt="Hameedia" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/hayleys.logo.png" alt="Hayleys" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/Heritance_Kandalama_logo.png" alt="Heritance" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/Port-City-BPO-logo.webp" alt="Port City" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/aitken.logo.jpg" alt="Aitken Spence" className="max-w-full max-h-full object-contain" />
                                 </div>
-                                <div className="flex items-center justify-center bg-white rounded-xl p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-48 h-32">
+                                <div className="flex items-center justify-center bg-white rounded-xl p-3 sm:p-6 border-2 border-[#1e3a5f]/10 hover:border-[#d4af37] transition-all duration-300 w-32 h-20 sm:w-48 sm:h-32">
                                     <img src="/amethyst.logo.jpg" alt="Amethyst" className="max-w-full max-h-full object-contain" />
                                 </div>
                             </div>
@@ -146,25 +146,25 @@ export default function ClientsPage() {
             </section>
 
             {/* Clients List */}
-            <section className="py-16 bg-gradient-to-b from-white to-[#e8eef4]">
+            <section className="py-12 sm:py-16 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-10">
-                        <h2 className="text-2xl sm:text-3xl font-bold text-[#1e3a5f] mb-3">Complete Client Directory</h2>
-                        <p className="text-gray-600">Organizations we proudly serve across Sri Lanka</p>
+                    <div className="text-center mb-8 sm:mb-10">
+                        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-2 sm:mb-3">Complete Client Directory</h2>
+                        <p className="text-sm sm:text-base text-gray-600">Organizations we proudly serve across Sri Lanka</p>
                     </div>
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                         {clients.map((client, index) => (
-                            <div key={index} className="group bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#d4af37]/30 hover:-translate-y-1">
-                                <div className="flex items-start gap-4">
-                                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#1e3a5f] to-[#3d5a80] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
-                                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div key={index} className="group bg-white p-4 sm:p-5 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#d4af37]/30 hover:-translate-y-1">
+                                <div className="flex items-start gap-3 sm:gap-4">
+                                    <div className="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-[#1e3a5f] to-[#3d5a80] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                        <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                         </svg>
                                     </div>
                                     <div className="flex-1 min-w-0">
-                                        <h3 className="font-semibold text-[#1e3a5f] text-sm sm:text-base mb-1 truncate group-hover:text-[#d4af37] transition-colors">{client.name}</h3>
+                                        <h3 className="font-semibold text-[#1e3a5f] text-sm sm:text-base mb-1 line-clamp-2 group-hover:text-[#d4af37] transition-colors">{client.name}</h3>
                                         <p className="text-xs sm:text-sm text-gray-500 line-clamp-2">
-                                            <svg className="w-3 h-3 inline mr-1 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <svg className="w-3 h-3 inline mr-1 flex-shrink-0 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                                             </svg>
