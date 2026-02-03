@@ -55,9 +55,12 @@ function StatCounter({ stat, isVisible, delay }: StatCounterProps) {
     const [count, setCount] = useState(0);
     const [hasStarted, setHasStarted] = useState(false);
 
-    // Extract number from string (e.g., "1000+" -> 1000, "90%" -> 90, "50M" -> 50)
-    const targetNumber = parseInt(stat.num.replace(/[^\d]/g, ""));
-    const suffix = stat.num.replace(/[\d]/g, "");
+    // Special handling for "24/7" format
+    const is24_7 = stat.num === "24/7";
+
+    // Extract number from string (e.g., "1000+" -> 1000, "90%" -> 90, "50M" -> 50, "24/7" -> 24)
+    const targetNumber = is24_7 ? 24 : parseInt(stat.num.replace(/[^\d]/g, ""));
+    const suffix = is24_7 ? "/7" : stat.num.replace(/[\d]/g, "");
 
     useEffect(() => {
         if (isVisible && !hasStarted) {
