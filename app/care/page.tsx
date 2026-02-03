@@ -290,7 +290,7 @@ export default function CarePage() {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <Link
                             href="/contact"
-                            className="bg-[#d4af37] text-[#1e3a5f] px-8 py-4 rounded-xl font-bold hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl"
+                            className="bg-[#d4af37] text-[#1e3a5f] px-8 py-4 rounded-xl font-bold hover:bg-white hover:text-[#3d5a80] transition-all duration-300 shadow-lg hover:shadow-xl"
                         >
                             Get in Touch
                         </Link>

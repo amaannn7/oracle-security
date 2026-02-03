@@ -161,7 +161,7 @@ export default function Home() {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Comprehensive care services division. Details and services will be announced soon.
                 </p>
-                <div className="inline-flex items-center text-[#3d5a80] font-semibold group-hover:gap-3 gap-2">
+                <div className="inline-flex items-center text-[#3d5a80] font-semibold group-hover:gap-3 gap-2 hover:text-[#d4af37] transition-colors">
                   Learn More
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -190,7 +190,7 @@ export default function Home() {
                 <p className="text-gray-600 mb-6 leading-relaxed">
                   Professional logistics and transportation solutions. Details and services will be announced soon.
                 </p>
-                <div className="inline-flex items-center text-[#5b7c99] font-semibold group-hover:gap-3 gap-2">
+                <div className="inline-flex items-center text-[#5b7c99] font-semibold group-hover:gap-3 gap-2 hover:text-[#d4af37] transition-colors">
                   Learn More
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

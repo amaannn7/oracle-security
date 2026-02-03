@@ -103,7 +103,7 @@ export default function SecurityPage() {
                             <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                                 Comprehensive security solutions including officers, cash management, VIP protection, and event security.
                             </p>
-                            <div className="text-sm sm:text-base text-[#d4af37] font-semibold flex items-center group-hover:gap-3 gap-2 transition-all">
+                            <div className="text-sm sm:text-base text-[#d4af37] font-semibold flex items-center group-hover:gap-3 gap-2 transition-all group-hover:text-[#1e3a5f]">
                                 View All Services
                                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -121,7 +121,7 @@ export default function SecurityPage() {
                             <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                                 Professional security training, self-defense, awareness programs, and certifications.
                             </p>
-                            <div className="text-sm sm:text-base text-[#d4af37] font-semibold flex items-center group-hover:gap-3 gap-2 transition-all">
+                            <div className="text-sm sm:text-base text-[#d4af37] font-semibold flex items-center group-hover:gap-3 gap-2 transition-all group-hover:text-[#1e3a5f]">
                                 Explore Training
                                 <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

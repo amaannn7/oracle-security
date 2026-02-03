@@ -113,7 +113,7 @@ export default function LogisticsPage() {
                         </p>
                         <Link
                             href="/contact"
-                            className="inline-block bg-[#5b7c99] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#4a6a88] transition-all duration-300 shadow-lg hover:shadow-xl"
+                            className="inline-block bg-[#5b7c99] text-white px-8 py-4 rounded-xl font-bold hover:bg-[#d4af37] hover:text-[#1e3a5f] transition-all duration-300 shadow-lg hover:shadow-xl"
                         >
                             Contact Us
                         </Link>
@@ -123,7 +123,7 @@ export default function LogisticsPage() {
                     <div className="mt-12 text-center">
                         <Link
                             href="/"
-                            className="inline-flex items-center text-[#1e3a5f] hover:text-[#d4af37] transition-colors gap-2"
+                            className="inline-flex items-center text-[#1e3a5f] hover:text-[#d4af37] transition-colors gap-2 font-semibold"
                         >
                             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
