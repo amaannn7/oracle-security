@@ -9,7 +9,7 @@ export default function ContactPage() {
         name: '',
         email: '',
         phone: '',
-        service: 'Security Officers',
+        service: 'Security Services',
         message: ''
     });
 
@@ -207,11 +207,9 @@ export default function ContactPage() {
                                             onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#1e3a5f] focus:outline-none"
                                         >
-                                            <option>Security Officers</option>
-                                            <option>Cash Management Services</option>
-                                            <option>Event Security Management</option>
-                                            <option>Escort Services</option>
-                                            <option>Personal Bodyguard/VIP Protection</option>
+                                            <option>Security Services</option>
+                                            <option>Care Services</option>
+                                            <option>Logistics Services</option>
                                             <option>Other</option>
                                         </select>
                                     </div>
