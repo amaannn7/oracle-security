@@ -419,7 +419,7 @@ body {
 
 /* Hover Effects */
 .hover-lift {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
 }
 
 .hover-lift:hover {
@@ -428,7 +428,7 @@ body {
 }
 
 .hover-glow {
-  transition: box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: box-shadow 0.3s ease;
 }
 
 .hover-glow:hover {
@@ -454,7 +454,7 @@ body {
 .scroll-animate {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .scroll-animate.visible {
@@ -478,7 +478,7 @@ body {
   bottom: 0;
   background: linear-gradient(135deg, transparent, rgba(212, 175, 55, 0.1));
   opacity: 0;
-  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.4s ease;
 }
 
 .modern-card:hover::before {
@@ -501,7 +501,7 @@ body {
   background: rgba(255, 255, 255, 0.3);
   border-radius: 50%;
   transform: translate(-50%, -50%);
-  transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1), height 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: width 0.6s ease, height 0.6s ease;
 }
 
 .btn-ripple:active::after {
@@ -522,7 +522,7 @@ body {
   width: 0;
   height: 2px;
   background: var(--gold-accent);
-  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: width 0.3s ease;
 }
 
 .line-animate:hover::after {
@@ -551,64 +551,4 @@ body {
 ::selection {
   background: var(--gold-accent);
   color: var(--primary-navy);
-}
-
-/* Page Transitions */
-@keyframes pageIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes pageOut {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  to {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-}
-
-.page-transition {
-  animation: pageIn 0.4s ease-out;
-}
-
-/* Smooth all transitions */
-* {
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Link transitions - smooth and consistent */
-a {
-  transition: color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Button transitions */
-button {
-  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Image transitions */
-img {
-  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
-    opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Card transitions */
-.card {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
