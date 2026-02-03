@@ -69,7 +69,7 @@ export default function LogisticsPage() {
             {/* Coming Soon Content */}
             <section className="py-24 bg-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="scroll-animate grid md:grid-cols-2 gap-12 items-center">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
                         {/* Image */}
                         <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image

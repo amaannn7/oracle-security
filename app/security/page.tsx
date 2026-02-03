@@ -82,7 +82,7 @@ export default function SecurityPage() {
             {/* Overview */}
             <section className="py-12 sm:py-20 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="scroll-animate max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+                    <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
                         <h2 className="text-2xl sm:text-4xl font-bold text-[#1e3a5f] mb-4 sm:mb-6">
                             Comprehensive Security Solutions
                         </h2>
@@ -92,7 +92,7 @@ export default function SecurityPage() {
                     </div>
 
                     {/* Service Categories */}
-                    <div className="scroll-animate grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12">
                         <Link href="/services" className="group bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                             <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-[#1e3a5f] to-[#3d5a80] rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
                                 <svg className="w-7 h-7 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -152,7 +152,7 @@ export default function SecurityPage() {
 
             {/* CTA Section */}
             <section className="py-12 sm:py-20 bg-gradient-to-br from-[#1e3a5f] to-[#3d5a80] text-white">
-                <div className="scroll-animate max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
                         Ready to Secure Your Assets?
                     </h2>

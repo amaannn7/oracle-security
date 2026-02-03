@@ -553,11 +553,11 @@ body {
   color: var(--primary-navy);
 }
 
-/* Page Transition */
-@keyframes pageEnter {
+/* Smooth Page Load Animation */
+@keyframes pageLoad {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
 
   to {
@@ -566,135 +566,106 @@ body {
   }
 }
 
-.page-transition {
-  animation: pageEnter 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+main {
+  animation: pageLoad 0.4s ease-out;
 }
 
-/* Smooth Link Transitions */
-a {
-  transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
-}
-
-/* Image Transitions */
-img {
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
-}
-
-/* Universal Smooth Transitions */
-* {
-  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-button,
-input,
-textarea,
-select {
-  transition: all 0.3s ease;
-}
-
-/* Enhanced Hover States */
-button:hover,
-a:hover {
-  transform: translateY(-1px);
-}
-
-button:active,
-a:active {
-  transform: translateY(0);
-}
-
-/* Stagger Animation */
-@keyframes stagger {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.stagger-item {
+/* Section Reveal on Scroll */
+section {
   opacity: 0;
-  animation: stagger 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform: translateY(20px);
+  animation: sectionReveal 0.6s ease forwards;
 }
 
-.stagger-item:nth-child(1) {
+@keyframes sectionReveal {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section:nth-child(1) {
+  animation-delay: 0s;
+}
+
+section:nth-child(2) {
   animation-delay: 0.1s;
 }
 
-.stagger-item:nth-child(2) {
+section:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+section:nth-child(4) {
   animation-delay: 0.2s;
 }
 
-.stagger-item:nth-child(3) {
+section:nth-child(5) {
+  animation-delay: 0.25s;
+}
+
+section:nth-child(6) {
   animation-delay: 0.3s;
 }
 
-.stagger-item:nth-child(4) {
+section:nth-child(7) {
+  animation-delay: 0.35s;
+}
+
+section:nth-child(8) {
   animation-delay: 0.4s;
 }
 
-.stagger-item:nth-child(5) {
-  animation-delay: 0.5s;
+/* Navigation Link Transitions */
+nav a {
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-.stagger-item:nth-child(6) {
-  animation-delay: 0.6s;
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 50%;
+  background: var(--gold-accent);
+  transition: width 0.3s ease, left 0.3s ease;
 }
 
-/* Parallax Effect */
-.parallax {
-  transition: transform 0.1s ease-out;
+nav a:hover::after {
+  width: 100%;
+  left: 0;
 }
 
-/* Backdrop Blur Transition */
-.backdrop-transition {
-  transition: backdrop-filter 0.3s ease, background 0.3s ease;
+/* Card Hover Effects */
+.group {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Focus States */
-:focus-visible {
+/* Image Zoom on Hover */
+.group img {
+  transition: transform 0.5s ease;
+}
+
+.group:hover img {
+  transform: scale(1.05);
+}
+
+/* Button Press Effect */
+button,
+a[href] {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:active,
+a[href]:active {
+  transform: scale(0.98);
+}
+
+/* Smooth Focus Transitions */
+*:focus-visible {
   outline: 2px solid var(--gold-accent);
   outline-offset: 2px;
   transition: outline-offset 0.2s ease;
-}
-
-/* Card Flip */
-@keyframes cardFlip {
-  from {
-    transform: perspective(1000px) rotateY(0deg);
-  }
-
-  to {
-    transform: perspective(1000px) rotateY(180deg);
-  }
-}
-
-.card-flip {
-  animation: cardFlip 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Smooth Height Transitions */
-.transition-height {
-  transition: height 0.4s cubic-bezier(0.16, 1, 0.3, 1), max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Loading Skeleton */
-@keyframes skeleton {
-  0% {
-    background-position: -200% 0;
-  }
-
-  100% {
-    background-position: 200% 0;
-  }
-}
-
-.skeleton {
-  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
-  background-size: 200% 100%;
-  animation: skeleton 1.5s infinite;
 }

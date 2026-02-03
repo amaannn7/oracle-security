@@ -52,13 +52,13 @@ export default function ContactPage() {
             {/* Contact Content */}
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="scroll-animate max-w-4xl mx-auto text-center mb-12">
+                    <div className="max-w-4xl mx-auto text-center mb-12">
                         <p className="text-xl text-gray-700">
                             Oracle Services delivers comprehensive solutions across Security, Care, and Logistics to meet your business needs.
                         </p>
                     </div>
 
-                    <div className="scroll-animate grid md:grid-cols-2 gap-12">
+                    <div className="grid md:grid-cols-2 gap-12">
                         {/* Map / Location - Left Side */}
                         <div>
                             <h2 className="text-2xl font-bold text-[#1e3a5f] mb-6">

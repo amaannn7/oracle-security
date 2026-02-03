@@ -21,7 +21,7 @@ export default function TrainingPage() {
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     {/* Three Images Grid */}
-                    <div className="scroll-animate grid md:grid-cols-3 gap-6 mb-12">
+                    <div className="grid md:grid-cols-3 gap-6 mb-12">
                         <div className="relative rounded-2xl overflow-hidden shadow-lg h-64">
                             <Image
                                 src="/training-1.jpeg"
@@ -71,7 +71,7 @@ export default function TrainingPage() {
             {/* Training Programs Table */}
             <section className="py-16 bg-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="scroll-animate text-center mb-12">
+                    <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-[#1e3a5f] mb-4">
                             <span className="inline-block animate-split-text">Training</span>{" "}
                             <span className="inline-block animate-bounce-in animate-delay-200">Programs</span>
@@ -79,7 +79,7 @@ export default function TrainingPage() {
                         <div className="w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-300"></div>
                     </div>
 
-                    <div className="scroll-animate grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                         {[
                             {
                                 program: "Firefighting",
@@ -163,7 +163,7 @@ export default function TrainingPage() {
                         ))}
                     </div>
 
-                    <div className="scroll-animate mt-10 bg-gradient-to-r from-[#1e3a5f] to-[#3d5a80] p-6 sm:p-8 rounded-2xl text-center relative overflow-hidden">
+                    <div className="mt-10 bg-gradient-to-r from-[#1e3a5f] to-[#3d5a80] p-6 sm:p-8 rounded-2xl text-center relative overflow-hidden">
                         <div className="absolute inset-0 bg-[url('/grid-pattern.svg')] opacity-10"></div>
                         <div className="relative z-10">
                             <div className="inline-flex items-center gap-2 bg-[#d4af37]/20 px-4 py-2 rounded-full mb-4">
@@ -181,7 +181,7 @@ export default function TrainingPage() {
             {/* Operational Staff */}
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="scroll-animate text-center mb-12">
+                    <div className="text-center mb-12">
                         <h2 className="text-3xl font-bold text-[#1e3a5f] mb-4">Operational Staff</h2>
                         <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                     </div>
