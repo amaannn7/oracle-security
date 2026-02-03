@@ -221,7 +221,7 @@ export default function ContactPage() {
                                             value={formData.message}
                                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#1e3a5f] focus:outline-none"
-                                            placeholder="Tell us about your security requirements..."
+                                            placeholder="Tell us about your requirements..."
                                         ></textarea>
                                     </div>
                                     <button
