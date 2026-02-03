@@ -10,7 +10,7 @@ export default function SecurityPage() {
             <Navigation />
 
             {/* Hero Section */}
-            <section className="relative pt-20 min-h-[70vh] sm:min-h-[85vh] flex items-center">
+            <section className="relative pt-20 min-h-[70vh] sm:min-h-[85vh] flex items-start">
                 {/* Background Image */}
                 <div className="absolute inset-0">
                     <Image
@@ -23,7 +23,7 @@ export default function SecurityPage() {
                     <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a5f]/90 via-[#1e3a5f]/70 to-transparent"></div>
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
+                <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 pt-12 sm:pt-16">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="text-center sm:text-left">
                             <div className="bg-white rounded-xl p-2 sm:p-3 mb-4 sm:mb-6 w-fit mx-auto sm:mx-0">
