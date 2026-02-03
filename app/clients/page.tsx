@@ -76,7 +76,7 @@ export default function ClientsPage() {
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
+                <div className="scroll-animate max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
                     <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#1e3a5f] mb-2">
                         Trusted by Leading Brands
                     </h2>
@@ -148,11 +148,11 @@ export default function ClientsPage() {
             {/* Clients List */}
             <section className="py-12 sm:py-16 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-8 sm:mb-10">
+                    <div className="scroll-animate text-center mb-8 sm:mb-10">
                         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-2 sm:mb-3">Complete Client Directory</h2>
                         <p className="text-sm sm:text-base text-gray-600">Organizations we proudly serve across Sri Lanka</p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+                    <div className="scroll-animate grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                         {clients.map((client, index) => (
                             <div key={index} className="group bg-white p-4 sm:p-5 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#d4af37]/30 hover:-translate-y-1">
                                 <div className="flex items-start gap-3 sm:gap-4">

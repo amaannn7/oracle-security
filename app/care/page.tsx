@@ -69,7 +69,7 @@ export default function CarePage() {
             {/* About Care Services */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div className="scroll-animate grid lg:grid-cols-2 gap-12 items-center mb-16">
                         <div>
                             <h2 className="text-4xl font-bold text-[#1e3a5f] mb-6">
                                 Compassionate Healthcare Services
@@ -98,14 +98,14 @@ export default function CarePage() {
             {/* Care Services */}
             <section className="py-20 bg-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
+                    <div className="scroll-animate text-center mb-16">
                         <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">Our Services</span>
                         <h2 className="text-4xl font-bold text-[#1e3a5f] mt-3 mb-6">
                             Comprehensive Care Solutions
                         </h2>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="scroll-animate grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Home Nursing Care */}
                         <div className="bg-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
                             <div className="w-16 h-16 bg-gradient-to-br from-[#3d5a80] to-[#5b7c99] rounded-2xl flex items-center justify-center mb-6">
@@ -190,13 +190,13 @@ export default function CarePage() {
             {/* Why Choose Oracle Care */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-16">
+                    <div className="scroll-animate text-center mb-16">
                         <h2 className="text-4xl font-bold text-[#1e3a5f] mb-6">
                             Why Choose Oracle Care
                         </h2>
                     </div>
 
-                    <div className="grid lg:grid-cols-2 gap-12 items-center mb-12">
+                    <div className="scroll-animate grid lg:grid-cols-2 gap-12 items-center mb-12">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                             <Image
                                 src="/caregiving-2.jpg"
@@ -280,7 +280,7 @@ export default function CarePage() {
 
             {/* CTA Section */}
             <section className="py-20 bg-gradient-to-br from-[#3d5a80] to-[#5b7c99] text-white">
-                <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div className="scroll-animate max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">
                         Need Professional Care Services?
                     </h2>

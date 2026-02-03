@@ -24,7 +24,7 @@ export default function AboutPage() {
             {/* About Content */}
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto">
+                    <div className="scroll-animate max-w-4xl mx-auto">
                         <p className="text-lg text-gray-700 leading-relaxed mb-6">
                             Choosing the right service provider is one of the most important business decisions you will ever make.
                         </p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
             {/* Vision & Mission */}
             <section className="py-16 bg-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="scroll-animate grid md:grid-cols-2 gap-8">
                         {/* Vision */}
                         <div className="bg-[#1e3a5f] text-white p-8 rounded-2xl hover-lift">
                             <h2 className="text-3xl font-bold mb-6 text-[#d4af37]">
@@ -76,7 +76,7 @@ export default function AboutPage() {
             {/* Our Strength */}
             <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
+                    <div className="scroll-animate text-center mb-12">
                         <h2 className="text-4xl font-bold text-[#1e3a5f] mb-4">Our Strength</h2>
                         <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                     </div>
@@ -94,13 +94,13 @@ export default function AboutPage() {
             {/* ORACLE Values */}
             <section className="py-16 bg-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
+                    <div className="scroll-animate text-center mb-12">
                         <h2 className="text-4xl font-bold text-[#1e3a5f] mb-4">Security Personnel Background</h2>
                         <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                         <p className="mt-6 text-lg text-gray-600">The core areas that give our security personnel the advantage over others and put them at par with the best are as follows:</p>
                     </div>
 
-                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+                    <div className="scroll-animate grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
                         <div className="bg-[#1e3a5f] text-white p-6 rounded-2xl text-center">
                             <span className="text-5xl font-bold text-[#d4af37]">O</span>
                             <p className="mt-3 font-semibold">Outstanding</p>
@@ -138,7 +138,7 @@ export default function AboutPage() {
             {/* Zero Liability */}
             <section className="py-16 bg-[#1e3a5f]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
+                    <div className="scroll-animate text-center mb-12">
                         <h2 className="text-4xl font-bold text-white mb-4">Zero Liability</h2>
                         <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                     </div>

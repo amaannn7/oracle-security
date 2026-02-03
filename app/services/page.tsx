@@ -102,7 +102,7 @@ export default function ServicesPage() {
             {/* Services Intro */}
             <section className="py-20 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto text-center mb-16">
+                    <div className="scroll-animate max-w-4xl mx-auto text-center mb-16">
                         <h2 className="text-3xl font-bold text-[#1e3a5f] mb-6">
                             Oracle Security - Comprehensive Protection Solutions
                         </h2>
@@ -112,7 +112,7 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Service Cards Grid */}
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="scroll-animate grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {services.map((service, index) => (
                             <div
                                 key={index}
@@ -168,7 +168,7 @@ export default function ServicesPage() {
             {/* Security Officers Premium Section */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center mb-12">
+                    <div className="scroll-animate text-center mb-12">
                         <span className="inline-block px-4 py-2 bg-[#d4af37] text-[#1e3a5f] rounded-full text-sm font-semibold mb-4">
                             Elite Security Personnel
                         </span>
@@ -180,7 +180,7 @@ export default function ServicesPage() {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-8 mb-12">
+                    <div className="scroll-animate grid md:grid-cols-3 gap-8 mb-12">
                         <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                             <img
                                 src="/security-1.jpeg"
