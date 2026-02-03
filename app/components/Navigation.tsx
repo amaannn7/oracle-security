@@ -51,18 +51,52 @@ export default function Navigation() {
                 </div>
 
                 {/* Mobile menu */}
-                {isMenuOpen && (
-                    <div className="md:hidden pb-4">
-                        <div className="flex flex-col space-y-2">
-                            <Link href="/" className="text-[#1e3a5f] hover:text-[#d4af37] py-2">Home</Link>
-                            <Link href="/security" className="text-[#1e3a5f] hover:text-[#d4af37] py-2">Security</Link>
-                            <Link href="/care" className="text-[#1e3a5f] hover:text-[#d4af37] py-2">Care</Link>
-                            <Link href="/logistics" className="text-[#1e3a5f] hover:text-[#d4af37] py-2">Logistics</Link>
-                            <Link href="/clients" className="text-[#1e3a5f] hover:text-[#d4af37] py-2">Clients</Link>
-                            <Link href="/contact" className="text-[#1e3a5f] hover:text-[#d4af37] py-2">Contact</Link>
-                        </div>
+                <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <div className="flex flex-col space-y-2 pb-4">
+                        <Link
+                            href="/"
+                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Home
+                        </Link>
+                        <Link
+                            href="/security"
+                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Security
+                        </Link>
+                        <Link
+                            href="/care"
+                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Care
+                        </Link>
+                        <Link
+                            href="/logistics"
+                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Logistics
+                        </Link>
+                        <Link
+                            href="/clients"
+                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Clients
+                        </Link>
+                        <Link
+                            href="/contact"
+                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Contact
+                        </Link>
                     </div>
-                )}
+                </div>
             </div>
         </nav>
     );
