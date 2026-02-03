@@ -89,43 +89,41 @@ export default function AboutPage() {
                             Thus, the efficiency and quality of OUR services are assured, and so is YOUR security.
                         </p>
                     </div>
+                </div>
+            </section>
 
-                    {/* Team Photos */}
-                    <div className="grid md:grid-cols-2 gap-8 mt-16">
-                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover-lift">
+            {/* Team Section */}
+            <section className="py-16 bg-[#e8eef4]">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center mb-12">
+                        <h2 className="text-4xl font-bold text-[#1e3a5f] mb-4">Our Team</h2>
+                        <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
+                    </div>
+                    <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
                             <Image
-                                src="/team-1.jpg"
+                                src="/team-1.jpeg"
                                 alt="Oracle Services Team"
                                 fill
                                 className="object-cover"
                                 unoptimized
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/60 to-transparent"></div>
-                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <h3 className="text-2xl font-bold">Our Professional Team</h3>
-                                <p className="text-gray-200">Dedicated to excellence in service delivery</p>
-                            </div>
                         </div>
-                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover-lift">
+                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg">
                             <Image
-                                src="/team-2.jpg"
-                                alt="Oracle Security Personnel"
+                                src="/team-2.jpeg"
+                                alt="Oracle Services Team"
                                 fill
                                 className="object-cover"
                                 unoptimized
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/60 to-transparent"></div>
-                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                                <h3 className="text-2xl font-bold">Trained Security Personnel</h3>
-                                <p className="text-gray-200">1000+ professionals ready to serve</p>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* ORACLE Values */}
-            <section className="py-16 bg-[#e8eef4]">
+            <section className="py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
                         <h2 className="text-4xl font-bold text-[#1e3a5f] mb-4">Security Personnel Background</h2>
