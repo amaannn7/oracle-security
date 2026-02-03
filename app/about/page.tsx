@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 export default function AboutPage() {
     return (
@@ -87,6 +88,38 @@ export default function AboutPage() {
                         <p className="text-xl text-[#1e3a5f] font-semibold text-center mt-8">
                             Thus, the efficiency and quality of OUR services are assured, and so is YOUR security.
                         </p>
+                    </div>
+
+                    {/* Team Photos */}
+                    <div className="grid md:grid-cols-2 gap-8 mt-16">
+                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover-lift">
+                            <Image
+                                src="/team-1.jpg"
+                                alt="Oracle Services Team"
+                                fill
+                                className="object-cover"
+                                unoptimized
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/60 to-transparent"></div>
+                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <h3 className="text-2xl font-bold">Our Professional Team</h3>
+                                <p className="text-gray-200">Dedicated to excellence in service delivery</p>
+                            </div>
+                        </div>
+                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl hover-lift">
+                            <Image
+                                src="/team-2.jpg"
+                                alt="Oracle Security Personnel"
+                                fill
+                                className="object-cover"
+                                unoptimized
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/60 to-transparent"></div>
+                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <h3 className="text-2xl font-bold">Trained Security Personnel</h3>
+                                <p className="text-gray-200">1000+ professionals ready to serve</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
