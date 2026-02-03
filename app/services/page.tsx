@@ -1,5 +1,6 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import Image from "next/image";
 
 export default function ServicesPage() {
     const services = [
@@ -12,7 +13,8 @@ export default function ServicesPage() {
             title: "Security Officers",
             description: "Over 1,000 carefully selected professionals trained extensively in defensive tactics and handgun use.",
             features: ["1000+ Trained Professionals", "Visible Security Deterrent", "Defensive Tactics Expert", "Island-Wide Coverage"],
-            color: "from-[#1e3a5f] to-[#3d5a80]"
+            color: "from-[#1e3a5f] to-[#3d5a80]",
+            image: "/security-1.jpeg"
         },
         {
             icon: (
@@ -23,7 +25,8 @@ export default function ServicesPage() {
             title: "Cash Management",
             description: "Customized vans with highly trained crew for secure cash transfer operations.",
             features: ["Armored Vehicle Fleet", "GPS Tracking", "Experienced Crew", "Real-Time Monitoring"],
-            color: "from-[#3d5a80] to-[#5b7c99]"
+            color: "from-[#3d5a80] to-[#5b7c99]",
+            image: "/security4.jpeg"
         },
         {
             icon: (
@@ -34,7 +37,8 @@ export default function ServicesPage() {
             title: "Event Security",
             description: "Tailored security solutions combining technology with personnel for flawless event management.",
             features: ["Crowd Control", "Access Management", "Emergency Response", "Coordination with Authorities"],
-            color: "from-[#5b7c99] to-[#1e3a5f]"
+            color: "from-[#5b7c99] to-[#1e3a5f]",
+            image: "/event1.jpeg"
         },
         {
             icon: (
@@ -45,7 +49,8 @@ export default function ServicesPage() {
             title: "Escort Services",
             description: "Armed/unarmed escort services for high-value cargo and individuals between destinations.",
             features: ["Armed Guards Available", "Route Planning", "Cargo Protection", "24/7 Availability"],
-            color: "from-[#1e3a5f] to-[#d4af37]"
+            color: "from-[#1e3a5f] to-[#d4af37]",
+            image: "/security2.jpeg"
         },
         {
             icon: (
@@ -56,7 +61,8 @@ export default function ServicesPage() {
             title: "VIP Protection",
             description: "International standard bodyguard services with Special Forces veterans and expert operatives.",
             features: ["Ex-Special Forces", "Close Protection", "Threat Assessment", "Discrete Operations"],
-            color: "from-[#d4af37] to-[#3d5a80]"
+            color: "from-[#d4af37] to-[#3d5a80]",
+            image: "/security-3.jpeg"
         },
         {
             icon: (
@@ -67,7 +73,8 @@ export default function ServicesPage() {
             title: "Training Programs",
             description: "Comprehensive security training for corporate and individual clients.",
             features: ["Self-Defense Training", "Awareness Programs", "First Aid Certification", "Custom Modules"],
-            color: "from-[#3d5a80] to-[#1e3a5f]"
+            color: "from-[#3d5a80] to-[#1e3a5f]",
+            image: "/training-1.jpeg"
         }
     ];
 
@@ -76,16 +83,16 @@ export default function ServicesPage() {
             <Navigation />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-16 bg-gradient-to-br from-[#1e3a5f] via-[#3d5a80] to-[#5b7c99]">
+            <section className="pt-32 pb-20 md:pb-16 bg-gradient-to-br from-[#1e3a5f] via-[#3d5a80] to-[#5b7c99]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <span className="inline-block px-4 py-2 bg-[#d4af37] text-[#1e3a5f] rounded-full text-sm font-semibold mb-4">
+                    <span className="inline-block px-4 py-2 bg-[#d4af37] text-[#1e3a5f] rounded-full text-sm font-semibold mb-6">
                         Oracle Security Division
                     </span>
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
                         <span className="inline-block animate-letter-spacing">Security</span>{" "}
                         <span className="inline-block animate-bounce-in animate-delay-300">Services</span>
                     </h1>
-                    <p className="text-xl text-white/90 max-w-2xl mx-auto mb-6">
+                    <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">
                         Professional security solutions from Oracle Services (Pvt) Ltd
                     </p>
                     <div className="w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-400"></div>
@@ -111,14 +118,23 @@ export default function ServicesPage() {
                                 key={index}
                                 className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden hover-lift"
                             >
-                                {/* Gradient Header */}
-                                <div className={`bg-gradient-to-br ${service.color} p-8 text-white relative overflow-hidden`}>
-                                    <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16"></div>
-                                    <div className="relative z-10">
-                                        <div className="mb-4 transform group-hover:scale-110 transition-transform duration-500">
-                                            {service.icon}
+                                {/* Image Header */}
+                                <div className="relative h-48 overflow-hidden">
+                                    <Image
+                                        src={service.image}
+                                        alt={service.title}
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                        unoptimized
+                                    />
+                                    <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-80`}></div>
+                                    <div className="absolute inset-0 flex items-center justify-center">
+                                        <div className="text-white text-center">
+                                            <div className="mb-2 transform group-hover:scale-110 transition-transform duration-500 flex justify-center">
+                                                {service.icon}
+                                            </div>
+                                            <h3 className="text-2xl font-bold">{service.title}</h3>
                                         </div>
-                                        <h3 className="text-2xl font-bold">{service.title}</h3>
                                     </div>
                                 </div>
 

@@ -146,25 +146,34 @@ export default function ClientsPage() {
             </section>
 
             {/* Clients List */}
-            <section className="py-16 bg-white">
+            <section className="py-16 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="overflow-x-auto">
-                        <table className="w-full bg-white rounded-2xl overflow-hidden shadow-lg">
-                            <thead className="bg-[#1e3a5f] text-white">
-                                <tr>
-                                    <th className="px-6 py-4 text-left">Client Name</th>
-                                    <th className="px-6 py-4 text-left">Address</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {clients.map((client, index) => (
-                                    <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                                        <td className="px-6 py-4 font-semibold text-[#1e3a5f]">{client.name}</td>
-                                        <td className="px-6 py-4 text-gray-600">{client.address}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
+                    <div className="text-center mb-10">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-[#1e3a5f] mb-3">Complete Client Directory</h2>
+                        <p className="text-gray-600">Organizations we proudly serve across Sri Lanka</p>
+                    </div>
+                    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {clients.map((client, index) => (
+                            <div key={index} className="group bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-[#d4af37]/30 hover:-translate-y-1">
+                                <div className="flex items-start gap-4">
+                                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-[#1e3a5f] to-[#3d5a80] rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                        </svg>
+                                    </div>
+                                    <div className="flex-1 min-w-0">
+                                        <h3 className="font-semibold text-[#1e3a5f] text-sm sm:text-base mb-1 truncate group-hover:text-[#d4af37] transition-colors">{client.name}</h3>
+                                        <p className="text-xs sm:text-sm text-gray-500 line-clamp-2">
+                                            <svg className="w-3 h-3 inline mr-1 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            </svg>
+                                            {client.address}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>

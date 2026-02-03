@@ -2,73 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import HeroCarousel from "./components/HeroCarousel";
+import CountUpStats from "./components/CountUpStats";
 
 export default function Home() {
   return (
     <main className="overflow-hidden">
       <Navigation />
 
-      {/* Hero Section - Modern with particles effect */}
-      <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 via-white to-blue-50">
-        {/* Decorative elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#1e3a5f]/5 rounded-full blur-3xl animate-pulse-slow"></div>
-          <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-3xl animate-pulse-slow animate-delay-300"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-[#1e3a5f]/5 to-[#d4af37]/5 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="relative z-10 text-center px-4 max-w-6xl mx-auto pt-20">
-          <div className="mb-1 animate-slide-in-up">
-            <div className="relative inline-block">
-              <Image
-                src="/oracle.png"
-                alt="Oracle Services"
-                width={200}
-                height={200}
-                className="mx-auto drop-shadow-2xl"
-                unoptimized
-              />
-            </div>
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-bold text-[#1e3a5f] mb-4 tracking-tight">
-            <span className="inline-block animate-letter-spacing">Oracle Services</span>
-            <span className="block text-[#d4af37] text-3xl md:text-4xl mt-3 font-semibold">
-              <span className="inline-block animate-split-text animate-delay-200">(Pvt)</span>{" "}
-              <span className="inline-block animate-split-text animate-delay-300">Ltd</span>
-            </span>
-          </h1>
-
-          <p className="text-xl md:text-2xl text-[#5b7c99] mb-4 max-w-3xl mx-auto leading-relaxed">
-            <span className="inline-block animate-word-slide animate-delay-100">Comprehensive</span>{" "}
-            <span className="inline-block animate-word-slide animate-delay-200">Solutions</span>{" "}
-            <span className="inline-block animate-word-slide animate-delay-300">in</span>{" "}
-            <span className="inline-block animate-word-slide animate-delay-400">Security,</span>{" "}
-            <span className="inline-block animate-word-slide animate-delay-500">Care</span>{" "}
-            <span className="inline-block animate-word-slide animate-delay-500">&</span>{" "}
-            <span className="inline-block animate-bounce-in animate-delay-600">Logistics</span>
-          </p>
-          <p className="text-lg text-[#5b7c99]/80 mb-10 max-w-2xl mx-auto">
-            Your trusted partner for professional services across multiple sectors
-          </p>          <div className="flex flex-col sm:flex-row gap-5 justify-center animate-slide-in-up animate-delay-300">
-            <a href="#divisions" className="group relative bg-[#1e3a5f] text-white px-10 py-4 rounded-full font-bold text-lg overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-[#1e3a5f]/30">
-              <span className="relative z-10">Explore Our Divisions</span>
-              <div className="absolute inset-0 bg-[#d4af37] transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></div>
-              <span className="absolute inset-0 flex items-center justify-center text-[#1e3a5f] opacity-0 group-hover:opacity-100 transition-opacity duration-300 font-bold">Explore Our Divisions</span>
-            </a>
-            <Link href="/contact" className="group border-2 border-[#1e3a5f] text-[#1e3a5f] px-10 py-4 rounded-full font-bold text-lg hover:bg-[#1e3a5f] hover:text-white transition-all duration-300 hover:shadow-xl">
-              Get in Touch
-            </Link>
-          </div>
-
-          {/* Scroll indicator */}
-          <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
-            <div className="w-6 h-10 border-2 border-[#1e3a5f]/30 rounded-full flex justify-center pt-2">
-              <div className="w-1.5 h-3 bg-[#1e3a5f]/50 rounded-full animate-pulse"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Carousel */}
+      <HeroCarousel />
 
       {/* Marquee Section - Modern Blue Design */}
       <section className="relative py-8 bg-gradient-to-r from-[#1e3a5f] via-[#2b4c75] to-[#1e3a5f] overflow-hidden">
@@ -85,6 +28,15 @@ export default function Home() {
           <div className="marquee-content">
             <div className="flex items-center gap-8 px-8">
               <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
+                <span className="text-white font-semibold text-base whitespace-nowrap">Security Division</span>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
+                <span className="text-white font-semibold text-base whitespace-nowrap">Care Division</span>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
+                <span className="text-white font-semibold text-base whitespace-nowrap">Logistics Division</span>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
                 <span className="text-white font-semibold text-base whitespace-nowrap">Trusted by Major Corporations</span>
               </div>
               <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
@@ -103,7 +55,7 @@ export default function Home() {
                 <span className="text-white font-semibold text-base whitespace-nowrap">Island-Wide Service</span>
               </div>
               <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Premier Security Provider</span>
+                <span className="text-white font-semibold text-base whitespace-nowrap">Premier Service Provider</span>
               </div>
               <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
                 <span className="text-white font-semibold text-base whitespace-nowrap">Professional & Reliable</span>
@@ -112,6 +64,15 @@ export default function Home() {
             {/* Duplicate for seamless loop */}
             <div className="flex items-center gap-8 px-8">
               <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
+                <span className="text-white font-semibold text-base whitespace-nowrap">Security Division</span>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
+                <span className="text-white font-semibold text-base whitespace-nowrap">Care Division</span>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
+                <span className="text-white font-semibold text-base whitespace-nowrap">Logistics Division</span>
+              </div>
+              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
                 <span className="text-white font-semibold text-base whitespace-nowrap">Trusted by Major Corporations</span>
               </div>
               <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
@@ -130,7 +91,7 @@ export default function Home() {
                 <span className="text-white font-semibold text-base whitespace-nowrap">Island-Wide Service</span>
               </div>
               <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Premier Security Provider</span>
+                <span className="text-white font-semibold text-base whitespace-nowrap">Premier Service Provider</span>
               </div>
               <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
                 <span className="text-white font-semibold text-base whitespace-nowrap">Professional & Reliable</span>
@@ -387,18 +348,74 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: "M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z", title: "Security Officers", desc: "Over 1,000 trained & disciplined professionals" },
-              { icon: "M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z", title: "Cash Management", desc: "Secure cash transportation & handling" },
-              { icon: "M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z", title: "Event Security", desc: "Professional event security management" },
-              { icon: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z", title: "Escort Services", desc: "Armed/unarmed escort for valuables" },
-              { icon: "M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z", title: "VIP Protection", desc: "International standard bodyguard services" },
-              { icon: "M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z", title: "Private Investigations", desc: "Professional & confidential investigations" },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
+                ),
+                title: "Security Officers",
+                desc: "Over 1,000 trained & disciplined professionals",
+                color: "bg-[#1e3a5f]"
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z" />
+                  </svg>
+                ),
+                title: "Cash Management",
+                desc: "Secure cash transportation & handling",
+                color: "bg-[#1e3a5f]"
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  </svg>
+                ),
+                title: "Event Security",
+                desc: "Professional event security management",
+                color: "bg-[#1e3a5f]"
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                  </svg>
+                ),
+                title: "Escort Services",
+                desc: "Armed/unarmed escort for valuables",
+                color: "bg-[#1e3a5f]"
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                  </svg>
+                ),
+                title: "VIP Protection",
+                desc: "International standard bodyguard services",
+                color: "bg-[#1e3a5f]"
+              },
+              {
+                icon: (
+                  <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                ),
+                title: "Private Investigations",
+                desc: "Professional & confidential investigations",
+                color: "bg-[#1e3a5f]"
+              },
             ].map((service, index) => (
               <div key={index} className={`group bg-white border border-gray-100 p-8 rounded-3xl hover:border-[#d4af37] hover:shadow-xl transition-all duration-300 hover-lift animate-slide-in-up animate-delay-${(index + 1) * 100}`}>
-                <div className="w-14 h-14 bg-[#e8eef4] group-hover:bg-[#1e3a5f] rounded-2xl flex items-center justify-center mb-6 transition-colors duration-300">
-                  <svg className="w-7 h-7 text-[#1e3a5f] group-hover:text-[#d4af37] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={service.icon} /></svg>
+                <div className={`w-16 h-16 ${service.color} rounded-2xl flex items-center justify-center mb-6 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3`}>
+                  <div className="text-white">
+                    {service.icon}
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-[#1e3a5f] mb-3">{service.title}</h3>
+                <h3 className="text-xl font-bold text-[#1e3a5f] mb-3 group-hover:text-[#d4af37] transition-colors">{service.title}</h3>
                 <p className="text-gray-600">{service.desc}</p>
               </div>
             ))}
@@ -451,19 +468,12 @@ export default function Home() {
       {/* Stats Section */}
       <section className="py-20 bg-gradient-to-r from-[#d4af37] to-[#c9a227]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            {[
-              { num: "1000+", label: "Security Personnel" },
-              { num: "12+", label: "Years Min. Experience" },
-              { num: "90%", label: "Combat Veterans" },
-              { num: "50M", label: "LKR Insurance Cover" },
-            ].map((stat, index) => (
-              <div key={index} className={`animate-count-up animate-delay-${(index + 1) * 100}`}>
-                <p className="text-4xl md:text-5xl font-bold text-[#1e3a5f]">{stat.num}</p>
-                <p className="text-[#1e3a5f]/80 mt-2 font-medium">{stat.label}</p>
-              </div>
-            ))}
-          </div>
+          <CountUpStats stats={[
+            { num: "1000+", label: "Security Personnel" },
+            { num: "12+", label: "Years Min. Experience" },
+            { num: "90%", label: "Combat Veterans" },
+            { num: "50M", label: "LKR Insurance Cover" },
+          ]} />
         </div>
       </section>
 
@@ -504,7 +514,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div> 
+        </div>
       </section>
 
       {/* Zero Liability - Modern */}
