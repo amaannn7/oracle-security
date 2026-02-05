@@ -19,8 +19,14 @@ export const metadata: Metadata = {
   description: "Oracle Services provides comprehensive solutions through three specialized divisions: Security, Care, and Logistics. Our Security Division maintains over 1000 trained personnel offering security guards, cash management, event security, escort services, and VIP protection throughout Sri Lanka.",
   keywords: "security services, security guards, cash management, event security, VIP protection, Sri Lanka security, Oracle Security",
   icons: {
-    icon: '/oracle.png',
-    apple: '/oracle.png',
+    icon: [
+      { url: '/oracle.png', sizes: '32x32', type: 'image/png' },
+      { url: '/oracle.png', sizes: '16x16', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/oracle.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/oracle.png',
   },
 };
 
@@ -32,8 +38,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/oracle.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/oracle.png" />
+        <link rel="icon" href="/oracle.png" sizes="any" />
+        <link rel="icon" href="/oracle.png" type="image/png" sizes="32x32" />
+        <link rel="icon" href="/oracle.png" type="image/png" sizes="16x16" />
+        <link rel="apple-touch-icon" href="/oracle.png" sizes="180x180" />
+        <meta name="theme-color" content="#1e3a5f" />
         <link rel="preload" href="/main-security.jpeg" as="image" />
         <link rel="preload" href="/caregiving-3.jpg" as="image" />
         <link rel="preload" href="/logistics.jpg" as="image" />
