@@ -505,7 +505,7 @@ export default function Home() {
                 </div>
                 <div className="text-center md:text-left flex-1">
                   <span className="inline-block bg-[#d4af37] text-[#1e3a5f] px-4 py-1 rounded-full text-sm font-semibold mb-4">Managing Director</span>
-                  <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-2">Lt Colonel (Rtd) Gamini Gangabadaarachchi</h3>
+                  <h3 className="text-2xl md:text-3xl font-bold text-[#1e3a5f] mb-2">Dr, Lt Colonel (Rtd) Gamini Gangabadaarachchi</h3>
                   <p className="text-[#d4af37] font-medium mb-4">RSP, LLB (Hons), MBA (HR), ISF, FISF</p>
                   <p className="text-gray-600 leading-relaxed">
                     Over 25 years of experience in the armed forces as an infantry officer and in military intelligence. Highly experienced in active combat duties both locally and overseas, with expertise in special security operations from courses in Europe and Asia. Former secretary of the Sri Lanka Security Services Providers Association (SLSSPA) and fellow member of Industrial Security Foundation.
