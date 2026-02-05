@@ -510,7 +510,7 @@ export default function Home() {
                   <p className="text-gray-600 leading-relaxed">
                     Over 25 years of experience in the armed forces as an infantry officer and in military intelligence. Highly experienced in active combat duties both locally and overseas, with expertise in special security operations from courses in Europe and Asia. Former secretary of the Sri Lanka Security Services Providers Association (SLSSPA) and fellow member of Industrial Security Foundation.
                   </p>
-                </div>
+                </div> 
               </div>
             </div>
           </div>
@@ -578,3 +578,8 @@ export default function Home() {
     </main>
   );
 }
+
+
+
+
+

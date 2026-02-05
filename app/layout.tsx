@@ -32,6 +32,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/oracle.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/oracle.png" />
         <link rel="preload" href="/main-security.jpeg" as="image" />
         <link rel="preload" href="/caregiving-3.jpg" as="image" />
         <link rel="preload" href="/logistics.jpg" as="image" />
