@@ -91,6 +91,38 @@ export default function SecurityPage() {
                         </p>
                     </div>
 
+                    {/* Security Images Showcase */}
+                    <div className="grid md:grid-cols-2 gap-8 mb-12 sm:mb-16">
+                        <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                            <Image
+                                src="/securitymain-1.jpg"
+                                alt="Oracle Security Operations"
+                                fill
+                                className="object-cover"
+                                unoptimized
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/70 to-transparent"></div>
+                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <h3 className="text-2xl font-bold mb-2">Professional Security Services</h3>
+                                <p className="text-gray-200">Protecting your assets with excellence</p>
+                            </div>
+                        </div>
+                        <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                            <Image
+                                src="/securitymain-2.jpg"
+                                alt="Oracle Security Team"
+                                fill
+                                className="object-cover"
+                                unoptimized
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/70 to-transparent"></div>
+                            <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                                <h3 className="text-2xl font-bold mb-2">Trained Personnel</h3>
+                                <p className="text-gray-200">1000+ security professionals at your service</p>
+                            </div>
+                        </div>
+                    </div>
+
                     {/* Service Categories */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-12">
                         <Link href="/services" className="group bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
@@ -135,7 +167,7 @@ export default function SecurityPage() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                 </svg>
                             </div>
-                            <h3 className="text-xl sm:text-2xl font-bold text-[#1e3a5f] mb-3 sm:mb-4">Our Clients</h3> 
+                            <h3 className="text-xl sm:text-2xl font-bold text-[#1e3a5f] mb-3 sm:mb-4">Our Clients</h3>
                             <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">
                                 Trusted by major corporations, hotels, banks, and government organizations across Sri Lanka.
                             </p>
