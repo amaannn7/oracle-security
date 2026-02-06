@@ -10,15 +10,8 @@ export default function AboutPage() {
             {/* Hero Section */}
             <section className="pt-32 pb-16 bg-gradient-to-br from-[#1e3a5f] via-[#3d5a80] to-[#5b7c99]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        <span className="inline-block animate-char-rotate">A</span>
-                        <span className="inline-block animate-char-rotate animate-delay-100">b</span>
-                        <span className="inline-block animate-char-rotate animate-delay-100">o</span>
-                        <span className="inline-block animate-char-rotate animate-delay-200">u</span>
-                        <span className="inline-block animate-char-rotate animate-delay-200">t</span>{" "}
-                        <span className="inline-block animate-bounce-in animate-delay-300">Us</span>
-                    </h1>
-                    <div className="w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-400"></div>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">About Us</h1>
+                    <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                 </div>
             </section>
 
@@ -51,10 +44,7 @@ export default function AboutPage() {
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Vision */}
                         <div className="bg-[#1e3a5f] text-white p-8 rounded-2xl hover-lift">
-                            <h2 className="text-3xl font-bold mb-6 text-[#d4af37]">
-                                <span className="inline-block animate-split-text">Our</span>{" "}
-                                <span className="inline-block animate-bounce-in animate-delay-200">Vision</span>
-                            </h2>
+                            <h2 className="text-3xl font-bold mb-6 text-[#d4af37]">Our Vision</h2>
                             <p className="text-xl leading-relaxed">
                                 &quot;To be the premier multi-sector service provider in the Region, delivering excellence across Security, Care, and Logistics.&quot;
                             </p>
@@ -62,10 +52,7 @@ export default function AboutPage() {
 
                         {/* Mission */}
                         <div className="bg-[#3d5a80] text-white p-8 rounded-2xl hover-lift">
-                            <h2 className="text-3xl font-bold mb-6 text-[#d4af37]">
-                                <span className="inline-block animate-split-text">Our</span>{" "}
-                                <span className="inline-block animate-bounce-in animate-delay-200">Mission</span>
-                            </h2>
+                            <h2 className="text-3xl font-bold mb-6 text-[#d4af37]">Our Mission</h2>
                             <p className="text-lg leading-relaxed">
                                 &quot;To develop comprehensive solutions tailored to clients&apos; needs across our three divisions - Security, Care, and Logistics - delivering top-notch services and becoming a nationally recognized organization within the next five years.&quot;
                             </p>

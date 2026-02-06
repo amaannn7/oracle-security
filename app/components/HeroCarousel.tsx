@@ -36,13 +36,30 @@ const slides = [
 
 export default function HeroCarousel() {
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [progress, setProgress] = useState(0);
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentSlide((prev) => (prev + 1) % slides.length);
-        }, 5000);
-        return () => clearInterval(timer);
-    }, []);
+        const interval = 5000;
+        const step = 50;
+        let elapsed = 0;
+
+        const progressTimer = setInterval(() => {
+            elapsed += step;
+            setProgress((elapsed / interval) * 100);
+            if (elapsed >= interval) {
+                elapsed = 0;
+                setProgress(0);
+                setCurrentSlide((prev) => (prev + 1) % slides.length);
+            }
+        }, step);
+
+        return () => clearInterval(progressTimer);
+    }, [currentSlide]);
+
+    const goToSlide = (index: number) => {
+        setCurrentSlide(index);
+        setProgress(0);
+    };
 
     return (
         <section className="relative min-h-[70vh] sm:min-h-screen flex items-center overflow-hidden">
@@ -69,7 +86,6 @@ export default function HeroCarousel() {
             <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-24 w-full">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     <div className="text-center sm:text-left">
-                        {/* Animated Content */}
                         {slides.map((slide, index) => (
                             <div
                                 key={index}
@@ -111,20 +127,26 @@ export default function HeroCarousel() {
                     </div>
                 </div>
 
-                {/* Slide Indicators */}
+                {/* Slide Indicators with progress */}
                 <div className="absolute bottom-4 sm:bottom-10 left-1/2 -translate-x-1/2 flex gap-2 sm:gap-3">
                     {slides.map((slide, index) => (
                         <button
                             key={index}
-                            onClick={() => setCurrentSlide(index)}
-                            className={`group flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full transition-all duration-300 ${index === currentSlide
+                            onClick={() => goToSlide(index)}
+                            className={`group relative flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full transition-all duration-300 overflow-hidden ${index === currentSlide
                                 ? "bg-[#d4af37] text-[#1e3a5f]"
                                 : "bg-white/20 text-white hover:bg-white/30"
                                 }`}
                         >
-                            <span className={`w-2 h-2 rounded-full ${index === currentSlide ? "bg-[#1e3a5f]" : "bg-white"
+                            {index === currentSlide && (
+                                <div
+                                    className="absolute inset-0 bg-[#d4af37]/30 rounded-full"
+                                    style={{ width: `${progress}%`, transition: 'width 50ms linear' }}
+                                ></div>
+                            )}
+                            <span className={`relative z-10 w-2 h-2 rounded-full ${index === currentSlide ? "bg-[#1e3a5f]" : "bg-white"
                                 }`}></span>
-                            <span className="text-xs sm:text-sm font-semibold hidden sm:inline">
+                            <span className="relative z-10 text-xs sm:text-sm font-semibold hidden sm:inline">
                                 {slide.title.split(" ")[1]}
                             </span>
                         </button>

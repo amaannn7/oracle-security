@@ -62,11 +62,8 @@ export default function ClientsPage() {
             {/* Hero Section */}
             <section className="pt-32 pb-16 bg-gradient-to-br from-[#1e3a5f] via-[#3d5a80] to-[#5b7c99]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
-                        <span className="inline-block animate-word-slide">Our</span>{" "}
-                        <span className="inline-block animate-bounce-in animate-delay-200">Clients</span>
-                    </h1>
-                    <div className="w-20 sm:w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-300"></div>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">Our Clients</h1>
+                    <div className="w-20 sm:w-24 h-1 bg-[#d4af37] mx-auto"></div>
                 </div>
             </section>
 

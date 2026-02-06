@@ -1,13 +1,39 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Navigation() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setScrolled(window.scrollY > 20);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const navLinks = [
+        { href: "/", label: "Home" },
+        { href: "/security", label: "Security" },
+        { href: "/care", label: "Care" },
+        { href: "/logistics", label: "Logistics" },
+        { href: "/training", label: "Training" },
+        { href: "/clients", label: "Clients" },
+    ];
+
+    const isActive = (href: string) => {
+        if (href === "/") return pathname === "/";
+        return pathname.startsWith(href);
+    };
 
     return (
-        <nav className="fixed top-0 left-0 right-0 bg-white shadow-lg z-50">
+        <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white shadow-md'
+            }`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-20">
                     <Link href="/" className="flex items-center">
@@ -16,17 +42,16 @@ export default function Navigation() {
                             alt="Oracle Services"
                             width={110}
                             height={110}
-                            className=""
                         />
                         <div className="ml-3 hidden lg:block">
                             <div className="text-[#1e3a5f] font-bold text-lg leading-tight">Oracle Services</div>
-                            <div className="text-[#d4af37] text-xs font-semibold">Security • Care • Logistics</div>
+                            <div className="text-[#d4af37] text-xs font-semibold tracking-wide">Security • Care • Logistics</div>
                         </div>
                     </Link>
 
                     {/* Mobile menu button */}
                     <button
-                        className="md:hidden text-[#1e3a5f]"
+                        className="md:hidden text-[#1e3a5f] p-2 rounded-lg hover:bg-[#e8eef4] transition-colors"
                         onClick={() => setIsMenuOpen(!isMenuOpen)}
                     >
                         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -34,66 +59,54 @@ export default function Navigation() {
                         </svg>
                     </button>
 
-                    <div className="hidden md:flex space-x-8">
-                        <Link href="/" className="text-[#1e3a5f] hover:text-[#d4af37] transition-colors">Home</Link>
-                        <Link href="/security" className="text-[#1e3a5f] hover:text-[#d4af37] transition-colors">Security</Link>
-                        <Link href="/care" className="text-[#1e3a5f] hover:text-[#d4af37] transition-colors">Care</Link>
-                        <Link href="/logistics" className="text-[#1e3a5f] hover:text-[#d4af37] transition-colors">Logistics</Link>
-                        <Link href="/clients" className="text-[#1e3a5f] hover:text-[#d4af37] transition-colors">Clients</Link>
+                    <div className="hidden md:flex items-center space-x-1">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${isActive(link.href)
+                                    ? 'text-[#d4af37]'
+                                    : 'text-[#1e3a5f] hover:text-[#d4af37]'
+                                    }`}
+                            >
+                                {link.label}
+                                {isActive(link.href) && (
+                                    <span className="absolute bottom-0 left-3 right-3 h-0.5 bg-[#d4af37] rounded-full"></span>
+                                )}
+                            </Link>
+                        ))}
                     </div>
 
                     <Link
                         href="/contact"
-                        className="hidden md:block bg-[#1e3a5f] text-white px-6 py-2 rounded-full font-semibold hover:bg-[#d4af37] hover:text-[#1e3a5f] transition-colors"
+                        className="hidden md:inline-flex items-center gap-2 bg-[#1e3a5f] text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-[#d4af37] hover:text-[#1e3a5f] transition-all duration-300 shadow-md hover:shadow-lg"
                     >
-                        Contact
+                        Contact Us
                     </Link>
                 </div>
 
                 {/* Mobile menu */}
-                <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="flex flex-col space-y-2 pb-4">
-                        <Link
-                            href="/"
-                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Home
-                        </Link>
-                        <Link
-                            href="/security"
-                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Security
-                        </Link>
-                        <Link
-                            href="/care"
-                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Care
-                        </Link>
-                        <Link
-                            href="/logistics"
-                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Logistics
-                        </Link>
-                        <Link
-                            href="/clients"
-                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
-                            onClick={() => setIsMenuOpen(false)}
-                        >
-                            Clients
-                        </Link>
+                <div className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+                    <div className="flex flex-col py-3 border-t border-gray-100">
+                        {navLinks.map((link) => (
+                            <Link
+                                key={link.href}
+                                href={link.href}
+                                className={`py-3 px-4 rounded-lg text-sm font-medium transition-all duration-300 hover:translate-x-1 ${isActive(link.href)
+                                    ? 'text-[#d4af37] bg-[#e8eef4]/50'
+                                    : 'text-[#1e3a5f] hover:text-[#d4af37] hover:bg-[#e8eef4]/30'
+                                    }`}
+                                onClick={() => setIsMenuOpen(false)}
+                            >
+                                {link.label}
+                            </Link>
+                        ))}
                         <Link
                             href="/contact"
-                            className="text-[#1e3a5f] hover:text-[#d4af37] py-2 transform transition-all duration-300 hover:translate-x-2"
+                            className="mt-2 mx-4 text-center bg-[#1e3a5f] text-white py-3 rounded-xl text-sm font-semibold hover:bg-[#d4af37] hover:text-[#1e3a5f] transition-all duration-300"
                             onClick={() => setIsMenuOpen(false)}
                         >
-                            Contact
+                            Contact Us
                         </Link>
                     </div>
                 </div>

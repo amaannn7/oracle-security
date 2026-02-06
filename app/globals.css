@@ -144,144 +144,6 @@ body {
   }
 }
 
-@keyframes splitTextReveal {
-  from {
-    opacity: 0;
-    transform: translateY(20px) rotateX(-90deg);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0) rotateX(0);
-  }
-}
-
-@keyframes letterSpacing {
-  from {
-    letter-spacing: -0.5em;
-    opacity: 0;
-  }
-
-  to {
-    letter-spacing: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes wordSlide {
-  from {
-    opacity: 0;
-    transform: translateX(-30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes charRotate {
-  from {
-    opacity: 0;
-    transform: rotate(-180deg) scale(0);
-  }
-
-  to {
-    opacity: 1;
-    transform: rotate(0) scale(1);
-  }
-}
-
-@keyframes waveText {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blinkCursor {
-
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0;
-  }
-}
-
-@keyframes glitchText {
-  0% {
-    transform: translate(0);
-  }
-
-  20% {
-    transform: translate(-2px, 2px);
-  }
-
-  40% {
-    transform: translate(-2px, -2px);
-  }
-
-  60% {
-    transform: translate(2px, 2px);
-  }
-
-  80% {
-    transform: translate(2px, -2px);
-  }
-
-  100% {
-    transform: translate(0);
-  }
-}
-
-@keyframes bounceIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.3) translateY(-50px);
-  }
-
-  50% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-
-  70% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes revealMask {
-  from {
-    clip-path: inset(0 100% 0 0);
-  }
-
-  to {
-    clip-path: inset(0 0 0 0);
-  }
-}
-
 @keyframes marquee {
   from {
     transform: translateX(0);
@@ -335,40 +197,6 @@ body {
   animation: scaleIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-.animate-split-text {
-  animation: splitTextReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-letter-spacing {
-  animation: letterSpacing 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-word-slide {
-  animation: wordSlide 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.animate-char-rotate {
-  animation: charRotate 0.7s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
-
-.animate-wave-text {
-  animation: waveText 1.5s ease-in-out infinite;
-}
-
-.animate-typewriter {
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typewriter 2s steps(40) forwards;
-}
-
-.animate-bounce-in {
-  animation: bounceIn 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
-}
-
-.animate-reveal-mask {
-  animation: revealMask 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
 /* Marquee Effect */
 .marquee {
   overflow: hidden;
@@ -378,18 +206,7 @@ body {
 
 .marquee-content {
   display: inline-flex;
-  animation: marquee 30s linear infinite;
-}
-
-/* Text Animation Wrappers */
-.split-chars>span {
-  display: inline-block;
-  opacity: 0;
-}
-
-.split-words>span {
-  display: inline-block;
-  opacity: 0;
+  animation: marquee 20s linear infinite;
 }
 
 /* Animation Delays */
@@ -551,4 +368,20 @@ body {
 ::selection {
   background: var(--gold-accent);
   color: var(--primary-navy);
+}
+
+/* Modern Form Styles */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--primary-navy);
+  box-shadow: 0 0 0 3px rgba(30, 58, 95, 0.1);
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input,
+textarea,
+select {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }

@@ -88,14 +88,11 @@ export default function ServicesPage() {
                     <span className="inline-block px-4 py-2 bg-[#d4af37] text-[#1e3a5f] rounded-full text-sm font-semibold mb-6">
                         Oracle Security Division
                     </span>
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        <span className="inline-block animate-letter-spacing">Security</span>{" "}
-                        <span className="inline-block animate-bounce-in animate-delay-300">Services</span>
-                    </h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">Security Services</h1>
                     <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto mb-8">
                         Professional security solutions from Oracle Services (Pvt) Ltd
                     </p>
-                    <div className="w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-400"></div>
+                    <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                 </div>
             </section>
 

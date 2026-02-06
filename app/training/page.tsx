@@ -10,10 +10,8 @@ export default function TrainingPage() {
             {/* Hero Section */}
             <section className="pt-32 pb-16 bg-gradient-to-br from-[#1e3a5f] via-[#3d5a80] to-[#5b7c99]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        <span className="inline-block animate-letter-spacing">Training</span>
-                    </h1>
-                    <div className="w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-300"></div>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Training</h1>
+                    <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                 </div>
             </section>
 
@@ -72,11 +70,8 @@ export default function TrainingPage() {
             <section className="py-16 bg-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-[#1e3a5f] mb-4">
-                            <span className="inline-block animate-split-text">Training</span>{" "}
-                            <span className="inline-block animate-bounce-in animate-delay-200">Programs</span>
-                        </h2>
-                        <div className="w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-300"></div>
+                        <h2 className="text-3xl font-bold text-[#1e3a5f] mb-4">Training Programs</h2>
+                        <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                     </div>
 
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">

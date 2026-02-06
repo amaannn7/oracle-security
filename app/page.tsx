@@ -13,90 +13,24 @@ export default function Home() {
       {/* Hero Carousel */}
       <HeroCarousel />
 
-      {/* Marquee Section - Modern Blue Design */}
-      <section className="relative py-8 bg-gradient-to-r from-[#1e3a5f] via-[#2b4c75] to-[#1e3a5f] overflow-hidden">
-        {/* Animated background pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(212, 175, 55, 0.1) 35px, rgba(212, 175, 55, 0.1) 70px)' }}></div>
-        </div>
-
-        {/* Glowing accent lines */}
-        <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
-
+      {/* Ticker Strip */}
+      <section className="py-4 bg-[#1e3a5f] overflow-hidden">
         <div className="relative marquee">
           <div className="marquee-content">
-            <div className="flex items-center gap-8 px-8">
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Security Division</span>
+            {[...Array(2)].map((_, setIdx) => (
+              <div key={setIdx} className="flex items-center gap-6 px-6">
+                {[
+                  "Security Division", "Care Division", "Logistics Division",
+                  "1000+ Personnel", "90% Combat Veterans", "Zero Liability",
+                  "LKR 50M Coverage", "Island-Wide Service", "24/7 Operations"
+                ].map((text, i) => (
+                  <span key={i} className="flex items-center gap-6">
+                    <span className="text-white/90 text-sm font-medium whitespace-nowrap">{text}</span>
+                    <span className="w-1.5 h-1.5 bg-[#d4af37] rounded-full flex-shrink-0"></span>
+                  </span>
+                ))}
               </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Care Division</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Logistics Division</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Trusted by Major Corporations</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">90% Combat Veterans</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Zero Liability Policy</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">LKR 50M Insurance Coverage</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">1000+ Trained Personnel</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Island-Wide Service</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Premier Service Provider</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Professional & Reliable</span>
-              </div>
-            </div>
-            {/* Duplicate for seamless loop */}
-            <div className="flex items-center gap-8 px-8">
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Security Division</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Care Division</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Logistics Division</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Trusted by Major Corporations</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">90% Combat Veterans</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Zero Liability Policy</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">LKR 50M Insurance Coverage</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">1000+ Trained Personnel</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Island-Wide Service</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Premier Service Provider</span>
-              </div>
-              <div className="bg-white/5 backdrop-blur-sm px-8 py-4 rounded-full border border-white/10">
-                <span className="text-white font-semibold text-base whitespace-nowrap">Professional & Reliable</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -207,15 +141,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="animate-slide-in-left">
-              <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider animate-reveal-mask">About Us</span>
+              <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">About Us</span>
               <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3 mb-6 leading-tight">
-                <span className="inline-block animate-char-rotate">Y</span>
-                <span className="inline-block animate-char-rotate animate-delay-100">o</span>
-                <span className="inline-block animate-char-rotate animate-delay-100">u</span>
-                <span className="inline-block animate-char-rotate animate-delay-100">r</span>{" "}
-                <span className="inline-block animate-bounce-in animate-delay-200">Trusted</span>{" "}
-                <span className="inline-block animate-bounce-in animate-delay-300">Service</span>{" "}
-                <span className="inline-block animate-bounce-in animate-delay-400">Partner</span>
+                Your Trusted Service Partner
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
                 Choosing the right service provider is one of the most important business decisions you will ever make. Oracle Services (Pvt) Ltd delivers comprehensive solutions through three specialized divisions: Security, Care, and Logistics.
@@ -223,15 +151,13 @@ export default function Home() {
               <p className="text-lg text-gray-600 leading-relaxed mb-8">
                 Our <span className="font-bold text-[#1e3a5f]">Security Division</span> proudly maintains a force strength exceeding <span className="font-bold text-[#1e3a5f]">1,000 disciplined and specifically trained personnel</span> catering to all aspects of security operations throughout the country.
               </p>
-              <Link href="/about" className="inline-flex items-center gap-2 text-[#1e3a5f] font-semibold hover:text-[#d4af37] transition-colors group">
+              <Link href="/about" className="inline-flex items-center gap-2 bg-[#1e3a5f] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#d4af37] hover:text-[#1e3a5f] transition-all duration-300 shadow-md hover:shadow-lg group">
                 Learn More About Us
-                <svg className="w-5 h-5 group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </Link>
             </div>
             <div className="animate-slide-in-right">
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-[#1e3a5f]/20 to-[#d4af37]/20 rounded-3xl blur-2xl animate-pulse-slow"></div>
-
                 {/* Main large image */}
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl hover-lift mb-4">
                   <Image
@@ -303,11 +229,9 @@ export default function Home() {
       <section className="py-24 bg-gradient-to-b from-[#f8fafc] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider animate-fade-in">Our Purpose</span>
+            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">Our Purpose</span>
             <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3">
-              <span className="inline-block animate-split-text">Vision</span>{" "}
-              <span className="inline-block animate-char-rotate animate-delay-200">&</span>{" "}
-              <span className="inline-block animate-split-text animate-delay-300">Mission</span>
+              Vision & Mission
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -339,10 +263,9 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider animate-reveal-mask">What We Offer</span>
+            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">What We Offer</span>
             <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3 mb-4">
-              <span className="inline-block animate-letter-spacing">Our</span>{" "}
-              <span className="inline-block animate-bounce-in animate-delay-300">Services</span>
+              Our Services
             </h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">Comprehensive security solutions tailored to your needs</p>
           </div>
@@ -421,9 +344,9 @@ export default function Home() {
             ))}
           </div>
           <div className="text-center mt-12">
-            <Link href="/services" className="inline-flex items-center gap-2 bg-[#1e3a5f] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#d4af37] hover:text-[#1e3a5f] transition-all duration-300">
+            <Link href="/services" className="inline-flex items-center gap-2 border-2 border-[#1e3a5f] text-[#1e3a5f] px-8 py-4 rounded-full font-semibold hover:bg-[#1e3a5f] hover:text-white transition-all duration-300 group">
               View All Services
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
             </Link>
           </div>
         </div>
@@ -437,13 +360,8 @@ export default function Home() {
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
-              <span className="inline-block text-[#d4af37] animate-char-rotate">O</span>
-              <span className="inline-block animate-char-rotate animate-delay-100">R</span>
-              <span className="inline-block animate-char-rotate animate-delay-200">A</span>
-              <span className="inline-block animate-char-rotate animate-delay-300">C</span>
-              <span className="inline-block animate-char-rotate animate-delay-400">L</span>
-              <span className="inline-block animate-char-rotate animate-delay-500">E</span>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-wider">
+              <span className="text-[#d4af37]">O</span>R<span className="text-[#d4af37]">A</span>CLE
             </h2>
             <p className="text-white/70 text-lg">Our Core Values Define Who We Are</p>
           </div>
@@ -466,8 +384,11 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-[#d4af37] to-[#c9a227]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-gradient-to-r from-[#d4af37] via-[#c9a227] to-[#d4af37] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(30, 58, 95, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 50%, rgba(30, 58, 95, 0.3) 0%, transparent 50%)' }}></div>
+        </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <CountUpStats stats={[
             { num: "1000+", label: "Security Personnel" },
             { num: "12+", label: "Years Min. Experience" },
@@ -481,18 +402,16 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider animate-fade-in">Leadership</span>
+            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">Leadership</span>
             <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3">
-              <span className="inline-block animate-word-slide">Meet</span>{" "}
-              <span className="inline-block animate-word-slide animate-delay-100">Our</span>{" "}
-              <span className="inline-block animate-bounce-in animate-delay-200">Leader</span>
+              Meet Our Leader
             </h2>
           </div>
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-[#f8fafc] to-white border border-gray-100 p-10 rounded-3xl shadow-xl animate-slide-in-up">
+            <div className="bg-white border border-gray-100 p-10 rounded-3xl shadow-xl animate-slide-in-up">
               <div className="flex flex-col md:flex-row gap-8 items-center">
-                <div className="relative">
-                  <div className="w-40 h-40 rounded-full overflow-hidden shadow-lg animate-border-glow">
+                <div className="relative flex-shrink-0">
+                  <div className="w-40 h-40 rounded-2xl overflow-hidden shadow-lg ring-4 ring-[#d4af37]/20">
                     <Image
                       src="/gamini.jpeg"
                       alt="Lt Colonel (Rtd) Gamini Gangabadaarachchi"
@@ -510,7 +429,7 @@ export default function Home() {
                   <p className="text-gray-600 leading-relaxed">
                     Over 25 years of experience in the armed forces as an infantry officer and in military intelligence. Highly experienced in active combat duties both locally and overseas, with expertise in special security operations from courses in Europe and Asia. Former secretary of the Sri Lanka Security Services Providers Association (SLSSPA) and fellow member of Industrial Security Foundation.
                   </p>
-                </div> 
+                </div>
               </div>
             </div>
           </div>
@@ -520,7 +439,7 @@ export default function Home() {
       {/* Zero Liability - Modern */}
       <section className="py-24 bg-[#f8fafc]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-br from-[#1e3a5f] to-[#0f2440] p-12 md:p-16 rounded-3xl relative overflow-hidden">
+          <div className="bg-gradient-to-br from-[#1e3a5f] to-[#0f2440] p-12 md:p-16 rounded-3xl relative overflow-hidden border-l-4 border-[#d4af37]">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4af37]/20 rounded-full translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -translate-x-1/2 translate-y-1/2"></div>
             <div className="relative z-10 max-w-3xl mx-auto text-center">
@@ -529,10 +448,7 @@ export default function Home() {
                 Zero Liability Policy
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                <span className="inline-block animate-split-text">Complete</span>{" "}
-                <span className="inline-block animate-split-text animate-delay-100">Peace</span>{" "}
-                <span className="inline-block animate-bounce-in animate-delay-200">of</span>{" "}
-                <span className="inline-block animate-bounce-in animate-delay-300">Mind</span>
+                Complete Peace of Mind
               </h2>
               <p className="text-white/80 text-lg leading-relaxed mb-8">
                 Oracle Security absorbs liability for actions not authorized by the client. Coupled with our comprehensive insurance policy, this eliminates any liability to our clients that may arise from the actions of our personnel.
@@ -547,26 +463,25 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1e3a5f]/5 to-[#d4af37]/5"></div>
+      <section className="py-24 bg-gradient-to-br from-[#1e3a5f] via-[#2a4a6f] to-[#3d5a80] relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-[#d4af37]/10 rounded-full blur-3xl"></div>
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mb-6">
-              <span className="inline-block animate-word-slide">Ready</span>{" "}
-              <span className="inline-block animate-word-slide animate-delay-100">to</span>{" "}
-              <span className="inline-block animate-letter-spacing animate-delay-200">Secure</span>{" "}
-              <span className="inline-block animate-bounce-in animate-delay-400">Your</span>{" "}
-              <span className="inline-block animate-bounce-in animate-delay-500">Future?</span>
+            <span className="inline-block px-4 py-1.5 bg-[#d4af37]/20 text-[#d4af37] rounded-full text-sm font-semibold mb-6 border border-[#d4af37]/30">Get Started Today</span>
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Secure Your Future?
             </h2>
-            <p className="text-xl text-gray-600 mb-10">
+            <p className="text-xl text-white/70 mb-10">
               Oracle Services delivers comprehensive solutions across Security, Care, and Logistics. Your success is our commitment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#1e3a5f] text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-[#d4af37] hover:text-[#1e3a5f] transition-all duration-300 shadow-lg hover:shadow-xl">
+              <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#d4af37] text-[#1e3a5f] px-10 py-5 rounded-full font-bold text-lg hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl">
                 Contact Us Today
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </Link>
-              <Link href="/services" className="inline-flex items-center justify-center gap-2 border-2 border-[#1e3a5f] text-[#1e3a5f] px-10 py-5 rounded-full font-bold text-lg hover:bg-[#1e3a5f] hover:text-white transition-all duration-300">
+              <Link href="/services" className="inline-flex items-center justify-center gap-2 border-2 border-white/30 text-white px-10 py-5 rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300">
                 View Services
               </Link>
             </div>
@@ -578,8 +493,3 @@ export default function Home() {
     </main>
   );
 }
-
-
-
-
-

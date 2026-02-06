@@ -35,17 +35,8 @@ export default function ContactPage() {
             {/* Hero Section */}
             <section className="pt-32 pb-16 bg-gradient-to-br from-[#1e3a5f] via-[#3d5a80] to-[#5b7c99]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-                        <span className="inline-block animate-char-rotate">C</span>
-                        <span className="inline-block animate-char-rotate animate-delay-100">o</span>
-                        <span className="inline-block animate-char-rotate animate-delay-100">n</span>
-                        <span className="inline-block animate-char-rotate animate-delay-200">t</span>
-                        <span className="inline-block animate-char-rotate animate-delay-200">a</span>
-                        <span className="inline-block animate-char-rotate animate-delay-300">c</span>
-                        <span className="inline-block animate-char-rotate animate-delay-300">t</span>{" "}
-                        <span className="inline-block animate-bounce-in animate-delay-400">Us</span>
-                    </h1>
-                    <div className="w-24 h-1 bg-[#d4af37] mx-auto animate-reveal-mask animate-delay-500"></div>
+                    <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">Contact Us</h1>
+                    <div className="w-24 h-1 bg-[#d4af37] mx-auto"></div>
                 </div>
             </section>
 
@@ -61,10 +52,7 @@ export default function ContactPage() {
                     <div className="grid md:grid-cols-2 gap-12">
                         {/* Map / Location - Left Side */}
                         <div>
-                            <h2 className="text-2xl font-bold text-[#1e3a5f] mb-6">
-                                <span className="inline-block animate-word-slide">Our</span>{" "}
-                                <span className="inline-block animate-bounce-in animate-delay-200">Location</span>
-                            </h2>
+                            <h2 className="text-2xl font-bold text-[#1e3a5f] mb-6">Our Location</h2>
                             <div className="rounded-2xl overflow-hidden shadow-lg mb-8">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3960.880239477425!2d79.89514!3d6.904921999999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwNTQnMTcuNyJOIDc5wrA1Myc0Mi41IkU!5e0!3m2!1sen!2slk!4v1769158610562!5m2!1sen!2slk"
