@@ -95,7 +95,7 @@ export default function SecurityPage() {
                     <div className="grid md:grid-cols-2 gap-8 mb-12 sm:mb-16">
                         <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/securitymain-1.jpg"
+                                src="/securitymain-1.jpeg"
                                 alt="Oracle Security Operations"
                                 fill
                                 className="object-cover"
@@ -109,7 +109,7 @@ export default function SecurityPage() {
                         </div>
                         <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/securitymain-2.jpg"
+                                src="/securitymain-2.jpeg"
                                 alt="Oracle Security Team"
                                 fill
                                 className="object-cover"
