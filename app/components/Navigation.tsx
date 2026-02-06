@@ -22,7 +22,6 @@ export default function Navigation() {
         { href: "/security", label: "Security" },
         { href: "/care", label: "Care" },
         { href: "/logistics", label: "Logistics" },
-        { href: "/training", label: "Training" },
         { href: "/clients", label: "Clients" },
     ];
 
