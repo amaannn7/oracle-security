@@ -1,8 +1,24 @@
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import CountUpStats from "../components/CountUpStats";
+
+export const metadata: Metadata = {
+    title: "Security Division - Professional Security Services in Sri Lanka",
+    description: "Oracle Security Division provides over 1000 trained security guards, cash management, event security, escort services, and VIP protection across Sri Lanka. 24/7 security solutions for corporate, industrial, and residential needs.",
+    keywords: ["Oracle Security", "security guards Sri Lanka", "security services", "cash management", "event security", "VIP protection", "escort services", "armed security", "corporate security", "private security Sri Lanka"],
+    openGraph: {
+        title: "Oracle Security Division - Professional Security Services",
+        description: "Over 1000 trained security personnel. Guards, cash management, event security, VIP protection across Sri Lanka.",
+        url: "https://oracleservices.lk/security",
+        images: [{ url: "/oracle-security.png", width: 1200, height: 630, alt: "Oracle Security Division" }],
+    },
+    alternates: {
+        canonical: "https://oracleservices.lk/security",
+    },
+};
 
 export default function SecurityPage() {
     return (

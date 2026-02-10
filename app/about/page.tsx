@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "About Us - Leading Multi-Sector Service Provider in Sri Lanka",
+    description: "Learn about Oracle Services (Pvt) Ltd, Sri Lanka's trusted multi-sector service provider since 2008. Three specialized divisions - Security, Care, and Logistics - serving leading corporations across the country.",
+    keywords: ["about Oracle Services", "Oracle Services Sri Lanka", "security company history", "Sri Lanka service provider", "Oracle Services Pvt Ltd"],
+    openGraph: {
+        title: "About Oracle Services (Pvt) Ltd",
+        description: "Sri Lanka's trusted multi-sector service provider since 2008. Security, Care, and Logistics divisions.",
+        url: "https://oracleservices.lk/about",
+        images: [{ url: "/oracle.png", width: 1200, height: 630, alt: "About Oracle Services" }],
+    },
+    alternates: {
+        canonical: "https://oracleservices.lk/about",
+    },
+};
 
 export default function AboutPage() {
     return (

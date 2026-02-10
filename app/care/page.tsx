@@ -1,7 +1,23 @@
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Care Division - Professional Caregiving Services in Sri Lanka",
+    description: "Oracle Care Division offers professional caregiving services including eldercare, patient care, and home nursing assistance. Trained and compassionate caregivers providing quality care across Sri Lanka.",
+    keywords: ["Oracle Care", "caregiving services Sri Lanka", "eldercare Sri Lanka", "home nursing", "patient care", "professional caregivers", "healthcare services", "aged care Sri Lanka"],
+    openGraph: {
+        title: "Oracle Care - Professional Caregiving Services",
+        description: "Trained caregivers providing eldercare, patient care, and home nursing across Sri Lanka.",
+        url: "https://oracleservices.lk/care",
+        images: [{ url: "/oracle-care.png", width: 1200, height: 630, alt: "Oracle Care Division" }],
+    },
+    alternates: {
+        canonical: "https://oracleservices.lk/care",
+    },
+};
 
 export default function CarePage() {
     return (

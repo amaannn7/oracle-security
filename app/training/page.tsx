@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Security Training Academy - Professional Guard Training Programs",
+    description: "Oracle Training Academy offers comprehensive security guard training programs including physical fitness, tactical training, first aid, fire safety, and professional conduct. SLPSA certified training in Sri Lanka.",
+    keywords: ["security training Sri Lanka", "guard training programs", "security academy", "Oracle training", "SLPSA certified", "security guard certification", "professional security training"],
+    openGraph: {
+        title: "Oracle Training Academy - Security Guard Training",
+        description: "Comprehensive security training programs. Physical fitness, tactical training, first aid, and professional conduct.",
+        url: "https://oracleservices.lk/training",
+        images: [{ url: "/training-1.jpeg", width: 1200, height: 630, alt: "Oracle Training Academy" }],
+    },
+    alternates: {
+        canonical: "https://oracleservices.lk/training",
+    },
+};
 
 export default function TrainingPage() {
     return (

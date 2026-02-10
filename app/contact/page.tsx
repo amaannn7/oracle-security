@@ -119,7 +119,7 @@ export default function ContactPage() {
                                         </svg>
                                         <div>
                                             <p className="font-semibold">Email</p>
-                                            <a href="mailto:info@oraclesecurity.lk" className="text-gray-300 hover:text-[#d4af37] transition-colors">info@oraclesecurity.lk</a>
+                                            <a href="mailto:info@oracleservices.lk" className="text-gray-300 hover:text-[#d4af37] transition-colors">info@oracleservices.lk</a>
                                         </div>
                                     </div>
                                     <div className="flex items-start">
@@ -209,7 +209,7 @@ export default function ContactPage() {
                                             value={formData.message}
                                             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                                             className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#1e3a5f] focus:outline-none"
-                                            placeholder="Tell us about your requirements..."
+                                            placeholder="Tell us about your requirements..." 
                                         ></textarea>
                                     </div>
                                     <button

@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+
+export const metadata: Metadata = {
+    title: "Our Clients - Trusted by Leading Companies in Sri Lanka",
+    description: "Oracle Services is trusted by top Sri Lankan corporations including Hayleys PLC, Aitken Spence, Heritance Hotels, and more. View our prestigious client portfolio across security, care, and logistics sectors.",
+    keywords: ["Oracle Services clients", "security clients Sri Lanka", "corporate clients", "Hayleys", "Aitken Spence", "Heritance Hotels", "trusted security company"],
+    openGraph: {
+        title: "Our Clients - Oracle Services (Pvt) Ltd",
+        description: "Trusted by leading Sri Lankan corporations including Hayleys, Aitken Spence, Heritance Hotels, and more.",
+        url: "https://oracleservices.lk/clients",
+        images: [{ url: "/oracle.png", width: 1200, height: 630, alt: "Oracle Services Clients" }],
+    },
+    alternates: {
+        canonical: "https://oracleservices.lk/clients",
+    },
+};
 
 export default function ClientsPage() {
     const clients = [

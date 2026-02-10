@@ -1,7 +1,23 @@
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Logistics Division - Transport & Distribution Services in Sri Lanka",
+    description: "Oracle Logistics Division provides reliable transport, distribution, and supply chain management services across Sri Lanka. Efficient and secure logistics solutions for businesses of all sizes.",
+    keywords: ["Oracle Logistics", "logistics services Sri Lanka", "transport services", "distribution services", "supply chain management", "freight services Sri Lanka", "delivery services"],
+    openGraph: {
+        title: "Oracle Logistics - Transport & Distribution Services",
+        description: "Reliable transport, distribution, and supply chain solutions across Sri Lanka.",
+        url: "https://oracleservices.lk/logistics",
+        images: [{ url: "/oracle-logistics.png", width: 1200, height: 630, alt: "Oracle Logistics Division" }],
+    },
+    alternates: {
+        canonical: "https://oracleservices.lk/logistics",
+    },
+};
 
 export default function LogisticsPage() {
     return (

@@ -1,6 +1,22 @@
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+    title: "Our Services - Security Guards, Cash Management, Event Security & VIP Protection",
+    description: "Comprehensive security services by Oracle Services: professional security guards, cash-in-transit management, event security, escort services, VIP & executive protection, and 24/7 monitoring across Sri Lanka.",
+    keywords: ["security guard services", "cash management services", "event security services", "VIP protection services", "escort security", "24/7 security monitoring", "Oracle security services", "Sri Lanka security solutions"],
+    openGraph: {
+        title: "Oracle Security Services - Full Range of Security Solutions",
+        description: "Security guards, cash management, event security, escort services, and VIP protection across Sri Lanka.",
+        url: "https://oracleservices.lk/services",
+        images: [{ url: "/oracle-security.png", width: 1200, height: 630, alt: "Oracle Security Services" }],
+    },
+    alternates: {
+        canonical: "https://oracleservices.lk/services",
+    },
+};
 
 export default function ServicesPage() {
     const services = [

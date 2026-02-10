@@ -1,9 +1,30 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import HeroCarousel from "./components/HeroCarousel";
 import CountUpStats from "./components/CountUpStats";
+
+export const metadata: Metadata = {
+  title: "Oracle Services (Pvt) Ltd - Premier Security, Care & Logistics in Sri Lanka",
+  description: "Oracle Services is Sri Lanka's leading multi-sector service provider with 1000+ trained security personnel. We offer professional security guards, cash management, event security, VIP protection, caregiving, and logistics services nationwide.",
+  keywords: [
+    "Oracle Services", "Oracle Security", "Oracle Service", "oracle security sri lanka",
+    "security company sri lanka", "security guards", "cash management",
+    "event security", "VIP protection", "caregiving sri lanka", "logistics sri lanka",
+    "Oracle Services Pvt Ltd", "multi-sector service provider",
+  ],
+  openGraph: {
+    title: "Oracle Services (Pvt) Ltd - Security, Care & Logistics",
+    description: "Sri Lanka's premier multi-sector service provider. 1000+ trained security personnel, professional caregiving, and reliable logistics.",
+    url: "https://oracleservices.lk",
+    images: [{ url: "/oracle.png", width: 1200, height: 630, alt: "Oracle Services (Pvt) Ltd" }],
+  },
+  alternates: {
+    canonical: "https://oracleservices.lk",
+  },
+};
 
 export default function Home() {
   return (
