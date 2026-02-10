@@ -37,6 +37,11 @@ const slides = [
 export default function HeroCarousel() {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [progress, setProgress] = useState(0);
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     useEffect(() => {
         const interval = 5000;
@@ -67,7 +72,7 @@ export default function HeroCarousel() {
             {slides.map((slide, index) => (
                 <div
                     key={index}
-                    className={`absolute inset-0 transition-opacity duration-1000 ${index === currentSlide ? "opacity-100" : "opacity-0"
+                    className={`absolute inset-0 ${mounted ? 'transition-opacity duration-1000' : ''} ${index === currentSlide ? "opacity-100" : "opacity-0"
                         }`}
                 >
                     <Image
@@ -89,7 +94,7 @@ export default function HeroCarousel() {
                         {slides.map((slide, index) => (
                             <div
                                 key={index}
-                                className={`transition-all duration-700 ${index === currentSlide
+                                className={`${mounted ? 'transition-all duration-700' : ''} ${index === currentSlide
                                     ? "opacity-100 translate-y-0"
                                     : "opacity-0 translate-y-4 absolute"
                                     }`}
