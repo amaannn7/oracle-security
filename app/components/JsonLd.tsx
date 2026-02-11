@@ -4,7 +4,12 @@ export default function JsonLd() {
         '@type': 'Organization',
         name: 'Oracle Services (Pvt) Ltd',
         url: 'https://oracleservices.lk',
-        logo: 'https://oracleservices.lk/oracle.png',
+        logo: {
+            '@type': 'ImageObject',
+            url: 'https://oracleservices.lk/logo new.jpg',
+            width: 512,
+            height: 512,
+        },
         description:
             'Premier multi-sector service provider in Sri Lanka offering Security, Care, and Logistics solutions.',
         address: {
@@ -41,7 +46,8 @@ export default function JsonLd() {
         '@type': 'LocalBusiness',
         '@id': 'https://oracleservices.lk/#business',
         name: 'Oracle Services (Pvt) Ltd',
-        image: 'https://oracleservices.lk/oracle.png',
+        image: 'https://oracleservices.lk/logo new.jpg',
+        logo: 'https://oracleservices.lk/logo new.jpg',
         url: 'https://oracleservices.lk',
         telephone: '+94-112-836-238',
         address: {

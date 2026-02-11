@@ -50,6 +50,12 @@ export const metadata: Metadata = {
     description: 'Sri Lanka\'s leading multi-sector service provider. Professional security guards, cash management, event security, caregiving, and logistics solutions.',
     images: [
       {
+        url: '/logo new.jpg',
+        width: 512,
+        height: 512,
+        alt: 'Oracle Services (Pvt) Ltd Logo',
+      },
+      {
         url: '/oracle.png',
         width: 1200,
         height: 630,
