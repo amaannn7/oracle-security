@@ -115,13 +115,32 @@ export default function ServicesPage() {
             {/* Services Intro */}
             <section className="py-20 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto text-center mb-16">
-                        <h2 className="text-3xl font-bold text-[#1e3a5f] mb-6">
-                            Oracle Security - Comprehensive Protection Solutions
-                        </h2>
-                        <p className="text-lg text-gray-700 leading-relaxed">
-                            Our Oracle Security division transcends the boundaries of traditional security in Sri Lanka. We offer a wide range of services from security guard services for organizations and private functions to security transport for cash and valuables; from surveillance and personal/VIP bodyguards to specialized training programs.
-                        </p>
+                    <div className="grid lg:grid-cols-2 gap-10 items-center mb-16">
+                        <div>
+                            <h2 className="text-3xl font-bold text-[#1e3a5f] mb-6">
+                                Oracle Security - Comprehensive Protection Solutions
+                            </h2>
+                            <p className="text-lg text-gray-700 leading-relaxed">
+                                Our Security Division maintains over 1,000 highly trained personnel ready to serve your protection needs 24/7. From security guards to VIP protection, we deliver excellence across all security domains.
+                            </p>
+                        </div>
+                        <div className="grid grid-cols-3 gap-3 sm:gap-4">
+                            {["/security-officer-1.jpeg", "/security-officer-2.jpeg", "/security-officer-3.jpeg"].map((src, i) => (
+                                <div
+                                    key={i}
+                                    className="relative aspect-[3/4] rounded-xl overflow-hidden shadow-lg group"
+                                >
+                                    <Image
+                                        src={src}
+                                        alt={`Security Officer ${i + 1}`}
+                                        fill
+                                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                                        unoptimized
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/30 to-transparent"></div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Service Cards Grid */}
@@ -375,6 +394,6 @@ export default function ServicesPage() {
             </section>
 
             <Footer />
-        </main>
+        </main >
     );
 }

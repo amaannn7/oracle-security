@@ -98,43 +98,23 @@ export default function SecurityPage() {
             {/* Overview */}
             <section className="py-12 sm:py-20 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-[1fr_auto] gap-10 items-center mb-12 sm:mb-16">
-                        <div className="max-w-3xl text-center lg:text-left mx-auto lg:mx-0">
-                            <h2 className="text-2xl sm:text-4xl font-bold text-[#1e3a5f] mb-4 sm:mb-6">
-                                Comprehensive Security Solutions
-                            </h2>
-                            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                                Oracle Security transcends the boundaries of traditional security in Sri Lanka. We offer a wide range of services from security guard services for organizations and private functions to security transport for cash and valuables, surveillance, personal/VIP bodyguards, and specialized training programs.
-                            </p>
-                        </div>
-                        {/* Officer Thumbnails */}
-                        <div className="hidden lg:flex items-end gap-2 -space-x-3">
-                            {["/security-officer-1.jpeg", "/security-officer-2.jpeg", "/security-officer-3.jpeg"].map((src, i) => (
-                                <div
-                                    key={i}
-                                    className="relative w-20 h-28 rounded-lg overflow-hidden shadow-md ring-2 ring-white hover:scale-110 hover:z-10 transition-transform duration-300"
-                                    style={{ transform: `rotate(${(i - 1) * 4}deg)` }}
-                                >
-                                    <Image
-                                        src={src}
-                                        alt={`Security Officer ${i + 1}`}
-                                        fill
-                                        className="object-cover"
-                                        unoptimized
-                                    />
-                                </div>
-                            ))}
-                        </div>
+                    <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+                        <h2 className="text-2xl sm:text-4xl font-bold text-[#1e3a5f] mb-4 sm:mb-6">
+                            Comprehensive Security Solutions
+                        </h2>
+                        <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                            Oracle Security transcends the boundaries of traditional security in Sri Lanka. We offer a wide range of services from security guard services for organizations and private functions to security transport for cash and valuables, surveillance, personal/VIP bodyguards, and specialized training programs.
+                        </p>
                     </div>
 
                     {/* Security Images Showcase */}
                     <div className="grid md:grid-cols-2 gap-8 mb-12 sm:mb-16">
-                        <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl group">
                             <Image
                                 src="/securitymain-1.jpeg"
                                 alt="Oracle Security Operations"
                                 fill
-                                className="object-cover"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 unoptimized
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/70 to-transparent"></div>
@@ -143,12 +123,12 @@ export default function SecurityPage() {
                                 <p className="text-gray-200">Protecting your assets with excellence</p>
                             </div>
                         </div>
-                        <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                        <div className="relative h-[300px] sm:h-[400px] rounded-2xl overflow-hidden shadow-2xl group">
                             <Image
                                 src="/securitymain-2.jpeg"
                                 alt="Oracle Security Team"
                                 fill
-                                className="object-cover"
+                                className="object-cover transition-transform duration-500 group-hover:scale-105"
                                 unoptimized
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/70 to-transparent"></div>
