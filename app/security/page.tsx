@@ -95,6 +95,35 @@ export default function SecurityPage() {
                 </div>
             </section>
 
+            {/* Security Officers Showcase */}
+            <section className="py-12 sm:py-20 bg-[#1e3a5f]">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+                        {[
+                            { src: "/security-officer-1.jpeg", delay: "0s" },
+                            { src: "/security-officer-2.jpeg", delay: "0.2s" },
+                            { src: "/security-officer-3.jpeg", delay: "0.4s" },
+                        ].map((officer, index) => (
+                            <div
+                                key={index}
+                                className="group relative h-[350px] sm:h-[450px] rounded-2xl overflow-hidden shadow-2xl animate-[fadeSlideUp_0.8s_ease-out_both]"
+                                style={{ animationDelay: officer.delay }}
+                            >
+                                <Image
+                                    src={officer.src}
+                                    alt={`Oracle Security Officer ${index + 1}`}
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    unoptimized
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                <div className="absolute bottom-0 left-0 right-0 h-1 bg-[#d4af37] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* Overview */}
             <section className="py-12 sm:py-20 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
