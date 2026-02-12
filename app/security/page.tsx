@@ -95,45 +95,36 @@ export default function SecurityPage() {
                 </div>
             </section>
 
-            {/* Security Officers Showcase */}
-            <section className="py-10 sm:py-14 bg-[#1e3a5f]">
-                <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-3 gap-3 sm:gap-5">
-                        {[
-                            { src: "/security-officer-1.jpeg", delay: "0s" },
-                            { src: "/security-officer-2.jpeg", delay: "0.15s" },
-                            { src: "/security-officer-3.jpeg", delay: "0.3s" },
-                        ].map((officer, index) => (
-                            <div
-                                key={index}
-                                className="group relative aspect-[3/4] rounded-xl overflow-hidden shadow-lg animate-[fadeSlideUp_0.8s_ease-out_both] ring-1 ring-white/10"
-                                style={{ animationDelay: officer.delay }}
-                            >
-                                <Image
-                                    src={officer.src}
-                                    alt={`Oracle Security Officer ${index + 1}`}
-                                    fill
-                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                                    unoptimized
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/50 via-transparent to-transparent"></div>
-                                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#d4af37] scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
             {/* Overview */}
             <section className="py-12 sm:py-20 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
-                        <h2 className="text-2xl sm:text-4xl font-bold text-[#1e3a5f] mb-4 sm:mb-6">
-                            Comprehensive Security Solutions
-                        </h2>
-                        <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                            Oracle Security transcends the boundaries of traditional security in Sri Lanka. We offer a wide range of services from security guard services for organizations and private functions to security transport for cash and valuables, surveillance, personal/VIP bodyguards, and specialized training programs.
-                        </p>
+                    <div className="grid lg:grid-cols-[1fr_auto] gap-10 items-center mb-12 sm:mb-16">
+                        <div className="max-w-3xl text-center lg:text-left mx-auto lg:mx-0">
+                            <h2 className="text-2xl sm:text-4xl font-bold text-[#1e3a5f] mb-4 sm:mb-6">
+                                Comprehensive Security Solutions
+                            </h2>
+                            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                                Oracle Security transcends the boundaries of traditional security in Sri Lanka. We offer a wide range of services from security guard services for organizations and private functions to security transport for cash and valuables, surveillance, personal/VIP bodyguards, and specialized training programs.
+                            </p>
+                        </div>
+                        {/* Officer Thumbnails */}
+                        <div className="hidden lg:flex items-end gap-2 -space-x-3">
+                            {["/security-officer-1.jpeg", "/security-officer-2.jpeg", "/security-officer-3.jpeg"].map((src, i) => (
+                                <div
+                                    key={i}
+                                    className="relative w-20 h-28 rounded-lg overflow-hidden shadow-md ring-2 ring-white hover:scale-110 hover:z-10 transition-transform duration-300"
+                                    style={{ transform: `rotate(${(i - 1) * 4}deg)` }}
+                                >
+                                    <Image
+                                        src={src}
+                                        alt={`Security Officer ${i + 1}`}
+                                        fill
+                                        className="object-cover"
+                                        unoptimized
+                                    />
+                                </div>
+                            ))}
+                        </div>
                     </div>
 
                     {/* Security Images Showcase */}
