@@ -5,6 +5,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import HeroCarousel from "./components/HeroCarousel";
 import CountUpStats from "./components/CountUpStats";
+import FadeIn from "./components/FadeIn";
 
 export const metadata: Metadata = {
   title: "Oracle Services (Pvt) Ltd - Premier Security, Care & Logistics in Sri Lanka",
@@ -59,15 +60,17 @@ export default function Home() {
       {/* Our Divisions Section */}
       <section id="divisions" className="py-24 bg-gradient-to-b from-white to-[#e8eef4]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">Our Divisions</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3 mb-6">
-              Three Pillars of Excellence
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Oracle Services provides comprehensive solutions across three specialized divisions
-            </p>
-          </div>
+          <FadeIn>
+            <div className="text-center mb-16">
+              <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">Our Divisions</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3 mb-6">
+                Three Pillars of Excellence
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Oracle Services provides comprehensive solutions across three specialized divisions
+              </p>
+            </div>
+          </FadeIn>
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* Oracle Security */}
@@ -161,7 +164,7 @@ export default function Home() {
       <section className="py-24 bg-white relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-slide-in-left">
+            <FadeIn>
               <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">About Us</span>
               <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3 mb-6 leading-tight">
                 Your Trusted Service Partner
@@ -176,8 +179,8 @@ export default function Home() {
                 Learn More About Us
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
               </Link>
-            </div>
-            <div className="animate-slide-in-right">
+            </FadeIn>
+            <FadeIn delay={150}>
               <div className="relative">
                 {/* Main large image */}
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl hover-lift mb-4">
@@ -241,7 +244,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -249,33 +252,39 @@ export default function Home() {
       {/* Vision & Mission - Modern Cards */}
       <section className="py-24 bg-gradient-to-b from-[#f8fafc] to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">Our Purpose</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3">
-              Vision & Mission
-            </h2>
-          </div>
+          <FadeIn>
+            <div className="text-center mb-16">
+              <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">Our Purpose</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3">
+                Vision & Mission
+              </h2>
+            </div>
+          </FadeIn>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="group relative bg-[#1e3a5f] p-10 rounded-3xl overflow-hidden hover-lift animate-slide-in-left">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-[#d4af37]/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-[#d4af37] rounded-2xl flex items-center justify-center mb-6">
-                  <svg className="w-7 h-7 text-[#1e3a5f]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+            <FadeIn>
+              <div className="group relative bg-[#1e3a5f] p-10 rounded-3xl overflow-hidden hover-lift">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-[#d4af37]/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-[#d4af37] rounded-2xl flex items-center justify-center mb-6">
+                    <svg className="w-7 h-7 text-[#1e3a5f]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#d4af37] mb-4">Our Vision</h3>
+                  <p className="text-white/90 text-lg leading-relaxed">&quot;To be the premier Security Service provider in the Region.&quot;</p>
                 </div>
-                <h3 className="text-2xl font-bold text-[#d4af37] mb-4">Our Vision</h3>
-                <p className="text-white/90 text-lg leading-relaxed">&quot;To be the premier Security Service provider in the Region.&quot;</p>
               </div>
-            </div>
-            <div className="group relative bg-white border-2 border-[#e8eef4] p-10 rounded-3xl overflow-hidden hover-lift animate-slide-in-right">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-[#1e3a5f]/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-              <div className="relative z-10">
-                <div className="w-14 h-14 bg-[#1e3a5f] rounded-2xl flex items-center justify-center mb-6">
-                  <svg className="w-7 h-7 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            </FadeIn>
+            <FadeIn delay={150}>
+              <div className="group relative bg-white border-2 border-[#e8eef4] p-10 rounded-3xl overflow-hidden hover-lift">
+                <div className="absolute top-0 right-0 w-40 h-40 bg-[#1e3a5f]/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div className="relative z-10">
+                  <div className="w-14 h-14 bg-[#1e3a5f] rounded-2xl flex items-center justify-center mb-6">
+                    <svg className="w-7 h-7 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-[#1e3a5f] mb-4">Our Mission</h3>
+                  <p className="text-gray-600 text-lg leading-relaxed">&quot;To develop comprehensive safety protection services tailored to clients&apos; needs to deliver top-notch security services and become a nationally recognized organization in security and defense.&quot;</p>
                 </div>
-                <h3 className="text-2xl font-bold text-[#1e3a5f] mb-4">Our Mission</h3>
-                <p className="text-gray-600 text-lg leading-relaxed">&quot;To develop comprehensive safety protection services tailored to clients&apos; needs to deliver top-notch security services and become a nationally recognized organization in security and defense.&quot;</p>
               </div>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -283,13 +292,15 @@ export default function Home() {
       {/* Services - Modern Grid */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">What We Offer</span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3 mb-4">
-              Our Services
-            </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">Comprehensive security solutions tailored to your needs</p>
-          </div>
+          <FadeIn>
+            <div className="text-center mb-16">
+              <span className="text-[#d4af37] font-semibold text-sm uppercase tracking-wider">What We Offer</span>
+              <h2 className="text-4xl md:text-5xl font-bold text-[#1e3a5f] mt-3 mb-4">
+                Our Services
+              </h2>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">Comprehensive security solutions tailored to your needs</p>
+            </div>
+          </FadeIn>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {

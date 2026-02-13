@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import FadeIn from "../components/FadeIn";
 
 export const metadata: Metadata = {
     title: "Care Division - Professional Caregiving Services in Sri Lanka",
@@ -85,29 +86,31 @@ export default function CarePage() {
             {/* About Care Services */}
             <section className="py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-                        <div>
-                            <h2 className="text-4xl font-bold text-[#1e3a5f] mb-6">
-                                Compassionate Healthcare Services
-                            </h2>
-                            <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                                Oracle Care is dedicated to providing professional nursing and healthcare services with compassion, dignity, and expertise. Our qualified healthcare professionals are committed to delivering personalized care that enhances the quality of life for our clients.
-                            </p>
-                            <p className="text-lg text-gray-700 leading-relaxed">
-                                We understand that quality care goes beyond medical expertise – it requires empathy, patience, and a genuine commitment to the wellbeing of those we serve.
-                            </p>
+                    <FadeIn>
+                        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                            <div>
+                                <h2 className="text-4xl font-bold text-[#1e3a5f] mb-6">
+                                    Compassionate Healthcare Services
+                                </h2>
+                                <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                                    Oracle Care is dedicated to providing professional nursing and healthcare services with compassion, dignity, and expertise. Our qualified healthcare professionals are committed to delivering personalized care that enhances the quality of life for our clients.
+                                </p>
+                                <p className="text-lg text-gray-700 leading-relaxed">
+                                    We understand that quality care goes beyond medical expertise – it requires empathy, patience, and a genuine commitment to the wellbeing of those we serve.
+                                </p>
+                            </div>
+                            <div className="relative h-[650px] rounded-2xl overflow-hidden shadow-2xl">
+                                <Image
+                                    src="/caregiving-4.jpeg"
+                                    alt="Professional Healthcare Services"
+                                    fill
+                                    className="object-cover"
+                                    unoptimized
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/50 to-transparent"></div>
+                            </div>
                         </div>
-                        <div className="relative h-[650px] rounded-2xl overflow-hidden shadow-2xl">
-                            <Image
-                                src="/caregiving-4.jpeg"
-                                alt="Professional Healthcare Services"
-                                fill
-                                className="object-cover"
-                                unoptimized
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/50 to-transparent"></div>
-                        </div>
-                    </div>
+                    </FadeIn>
                 </div>
             </section>
 

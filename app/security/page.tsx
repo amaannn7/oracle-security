@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import CountUpStats from "../components/CountUpStats";
+import FadeIn from "../components/FadeIn";
 
 export const metadata: Metadata = {
     title: "Security Division - Professional Security Services in Sri Lanka",
@@ -98,14 +99,16 @@ export default function SecurityPage() {
             {/* Overview */}
             <section className="py-12 sm:py-20 bg-gradient-to-b from-white to-[#e8eef4]">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
-                        <h2 className="text-2xl sm:text-4xl font-bold text-[#1e3a5f] mb-4 sm:mb-6">
-                            Comprehensive Security Solutions
-                        </h2>
-                        <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                            Oracle Security transcends the boundaries of traditional security in Sri Lanka. We offer a wide range of services from security guard services for organizations and private functions to security transport for cash and valuables, surveillance, personal/VIP bodyguards, and specialized training programs.
-                        </p>
-                    </div>
+                    <FadeIn>
+                        <div className="max-w-4xl mx-auto text-center mb-12 sm:mb-16">
+                            <h2 className="text-2xl sm:text-4xl font-bold text-[#1e3a5f] mb-4 sm:mb-6">
+                                Comprehensive Security Solutions
+                            </h2>
+                            <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                                Oracle Security transcends the boundaries of traditional security in Sri Lanka. We offer a wide range of services from security guard services for organizations and private functions to security transport for cash and valuables, surveillance, personal/VIP bodyguards, and specialized training programs.
+                            </p>
+                        </div>
+                    </FadeIn>
 
                     {/* Security Images Showcase */}
                     <div className="grid md:grid-cols-2 gap-8 mb-12 sm:mb-16">

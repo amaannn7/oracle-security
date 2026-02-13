@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
+import FadeIn from "../components/FadeIn";
 
 export const metadata: Metadata = {
     title: "Our Clients - Trusted by Leading Companies in Sri Lanka",
@@ -89,12 +90,14 @@ export default function ClientsPage() {
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
                 <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#d4af37] to-transparent"></div>
 
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
-                    <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#1e3a5f] mb-2">
-                        Trusted by Leading Brands
-                    </h2>
-                    <p className="text-center text-sm sm:text-base text-gray-600">Our prestigious client portfolio</p>
-                </div>
+                <FadeIn>
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6 sm:mb-8">
+                        <h2 className="text-2xl sm:text-3xl font-bold text-center text-[#1e3a5f] mb-2">
+                            Trusted by Leading Brands
+                        </h2>
+                        <p className="text-center text-sm sm:text-base text-gray-600">Our prestigious client portfolio</p>
+                    </div>
+                </FadeIn>
 
                 <div className="relative pointer-events-none">
                     <div className="marquee">

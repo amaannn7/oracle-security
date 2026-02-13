@@ -3,6 +3,7 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from "next/image";
+import FadeIn from "../components/FadeIn";
 
 export const metadata: Metadata = {
     title: "Logistics Division - Transport & Distribution Services in Sri Lanka",
@@ -85,39 +86,41 @@ export default function LogisticsPage() {
             {/* Coming Soon Content */}
             <section className="py-24 bg-white">
                 <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid md:grid-cols-2 gap-12 items-center">
-                        {/* Image */}
-                        <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
-                            <Image
-                                src="/logistics-2.jpg"
-                                alt="Oracle Logistics Services"
-                                fill
-                                className="object-cover"
-                                unoptimized
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/50 to-transparent"></div>
-                        </div>
+                    <FadeIn>
+                        <div className="grid md:grid-cols-2 gap-12 items-center">
+                            {/* Image */}
+                            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                                <Image
+                                    src="/logistics-2.jpg"
+                                    alt="Oracle Logistics Services"
+                                    fill
+                                    className="object-cover"
+                                    unoptimized
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-[#1e3a5f]/50 to-transparent"></div>
+                            </div>
 
-                        {/* Content */}
-                        <div className="text-center md:text-left">
-                            <div className="w-20 h-20 bg-gradient-to-br from-[#5b7c99] to-[#d4af37] rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
-                                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
-                                </svg>
-                            </div>
-                            <h2 className="text-4xl font-bold text-[#1e3a5f] mb-6">
-                                Coming Soon
-                            </h2>
-                            <p className="text-xl text-gray-600 mb-8">
-                                Oracle Logistics services are currently under development. We're working hard to bring you comprehensive logistics and transportation solutions.
-                            </p>
-                            <div className="inline-block bg-[#e8eef4] px-8 py-4 rounded-2xl">
-                                <p className="text-[#1e3a5f] font-semibold">
-                                    Stay tuned for updates on our logistics services division
+                            {/* Content */}
+                            <div className="text-center md:text-left">
+                                <div className="w-20 h-20 bg-gradient-to-br from-[#5b7c99] to-[#d4af37] rounded-full flex items-center justify-center mb-6 mx-auto md:mx-0">
+                                    <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+                                    </svg>
+                                </div>
+                                <h2 className="text-4xl font-bold text-[#1e3a5f] mb-6">
+                                    Coming Soon
+                                </h2>
+                                <p className="text-xl text-gray-600 mb-8">
+                                    Oracle Logistics services are currently under development. We're working hard to bring you comprehensive logistics and transportation solutions.
                                 </p>
+                                <div className="inline-block bg-[#e8eef4] px-8 py-4 rounded-2xl">
+                                    <p className="text-[#1e3a5f] font-semibold">
+                                        Stay tuned for updates on our logistics services division
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </FadeIn>
 
                     {/* Contact CTA */}
                     <div className="mt-20 pt-16 border-t border-gray-200 text-center">
