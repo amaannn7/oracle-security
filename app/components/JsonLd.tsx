@@ -11,7 +11,7 @@ export default function JsonLd() {
             height: 512,
         },
         description:
-            'Premier multi-sector service provider in Sri Lanka offering Security, Care, and Logistics solutions.',
+            'Leading security company in Sri Lanka. Professional security services with over 1000 trained security guards. Security solutions, cash management, event security, VIP protection across Sri Lanka.',
         address: {
             '@type': 'PostalAddress',
             streetAddress: 'No. 16/1, Wanatha Road, Gangodawila',

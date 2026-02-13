@@ -22,15 +22,26 @@ export const metadata: Metadata = {
     default: "Oracle Services (Pvt) Ltd - Premier Security, Care & Logistics in Sri Lanka",
     template: "%s | Oracle Services (Pvt) Ltd",
   },
-  description: "Oracle Services (Pvt) Ltd is Sri Lanka's premier multi-sector service provider offering professional security services, caregiving, and logistics solutions. Over 1000 trained security guards, cash management, event security, escort services, and VIP protection across Sri Lanka.",
+  description: "Oracle Services (Pvt) Ltd - Leading security company in Sri Lanka. Professional security services with 1000+ trained security guards. We provide security solutions, cash management, event security, VIP protection, escort services, caregiving, and logistics services across Sri Lanka. Available 24/7 in Colombo, Nugegoda and nationwide.",
   keywords: [
+    // Primary brand terms
     "Oracle Services", "Oracle Security", "Oracle Service", "oracle services sri lanka",
-    "oracle security sri lanka", "oracle care", "oracle logistics",
-    "security services sri lanka", "security guards sri lanka", "security company sri lanka",
-    "cash management services", "event security sri lanka", "VIP protection sri lanka",
-    "escort services sri lanka", "caregiving services sri lanka", "logistics sri lanka",
-    "private security company", "security guard company", "Oracle Services Pvt Ltd",
-    "oracleservices.lk", "professional security", "trained security personnel",
+    "oracle security sri lanka", "oracle care", "oracle logistics", "Oracle Services Pvt Ltd",
+    // Core security terms
+    "security", "security services", "security sri lanka", "security services sri lanka",
+    "security company", "security company sri lanka", "security guards", "security guards sri lanka",
+    "security guard company", "security guard services", "security services colombo",
+    // Service-specific
+    "cash management services", "cash management sri lanka", "event security sri lanka",
+    "VIP protection sri lanka", "escort services sri lanka", "armed security", "unarmed security",
+    "corporate security", "industrial security", "residential security", "24/7 security",
+    // Location-based
+    "security colombo", "security nugegoda", "security services nugegoda",
+    "private security company", "professional security", "trained security personnel",
+    // Supporting services
+    "caregiving services sri lanka", "logistics sri lanka", "oracleservices.lk",
+    // Variations and misspellings
+    "secuirty services", "security servises", "seurity services sri lanka",
   ],
   icons: {
     icon: [

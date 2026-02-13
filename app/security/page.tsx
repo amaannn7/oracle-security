@@ -8,8 +8,20 @@ import FadeIn from "../components/FadeIn";
 
 export const metadata: Metadata = {
     title: "Security Division - Professional Security Services in Sri Lanka",
-    description: "Oracle Security Division provides over 1000 trained security guards, cash management, event security, escort services, and VIP protection across Sri Lanka. 24/7 security solutions for corporate, industrial, and residential needs.",
-    keywords: ["Oracle Security", "security guards Sri Lanka", "security services", "cash management", "event security", "VIP protection", "escort services", "armed security", "corporate security", "private security Sri Lanka"],
+    description: "Oracle Security - Professional security services in Sri Lanka. Over 1000 trained security guards providing 24/7 security solutions. Security guards, cash management, event security, armed security, VIP protection, escort services for corporate, industrial, and residential needs across Sri Lanka.",
+    keywords: [
+        "Oracle Security", "security", "security services", "security sri lanka",
+        "security services sri lanka", "security guards Sri Lanka", "security guards",
+        "security guard company", "security guard services", "security company",
+        "security company sri lanka", "professional security", "trained security guards",
+        "cash management", "cash management services", "cash in transit",
+        "event security", "event security services", "VIP protection", "VIP security",
+        "escort services", "armed security", "armed security guards", "unarmed security",
+        "corporate security", "industrial security", "residential security",
+        "private security Sri Lanka", "24/7 security", "security patrol",
+        "bodyguard services", "personal protection", "executive protection",
+        "security colombo", "security nugegoda", "1000 security guards",
+    ],
     openGraph: {
         title: "Oracle Security Division - Professional Security Services",
         description: "Over 1000 trained security personnel. Guards, cash management, event security, VIP protection across Sri Lanka.",

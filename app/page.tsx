@@ -9,12 +9,18 @@ import FadeIn from "./components/FadeIn";
 
 export const metadata: Metadata = {
   title: "Oracle Services (Pvt) Ltd - Premier Security, Care & Logistics in Sri Lanka",
-  description: "Oracle Services is Sri Lanka's leading multi-sector service provider with 1000+ trained security personnel. We offer professional security guards, cash management, event security, VIP protection, caregiving, and logistics services nationwide.",
+  description: "Oracle Services - Sri Lanka's leading security company and multi-sector service provider. Professional security services with 1000+ trained security guards available 24/7. Security guards, cash management, event security, VIP protection, armed security, corporate security, and more across Sri Lanka.",
   keywords: [
     "Oracle Services", "Oracle Security", "Oracle Service", "oracle security sri lanka",
-    "security company sri lanka", "security guards", "cash management",
-    "event security", "VIP protection", "caregiving sri lanka", "logistics sri lanka",
-    "Oracle Services Pvt Ltd", "multi-sector service provider",
+    "security", "security services", "security sri lanka", "security services sri lanka",
+    "security company sri lanka", "security guards", "security guards sri lanka",
+    "security guard company", "security guard services", "cash management",
+    "cash management services", "event security", "event security sri lanka",
+    "VIP protection", "VIP protection sri lanka", "armed security", "unarmed security",
+    "corporate security", "industrial security", "24/7 security services",
+    "professional security", "trained security guards", "security company",
+    "caregiving sri lanka", "logistics sri lanka", "Oracle Services Pvt Ltd",
+    "multi-sector service provider", "security colombo", "security nugegoda",
   ],
   openGraph: {
     title: "Oracle Services (Pvt) Ltd - Security, Care & Logistics",
